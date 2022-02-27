@@ -11,6 +11,8 @@ for cocktail in cocktails:
       cocktail['ingredients'] = cocktail['ingredients'].split('<br>')
     elif '<br/>' in cocktail['ingredients']:
       cocktail['ingredients'] = cocktail['ingredients'].split('<br/>')
+    elif '<br />' in cocktail['ingredients']:
+      cocktail['ingredients'] = cocktail['ingredients'].split('<br />')
     elif '&nbsp;ml' in cocktail['ingredients']:
       cocktail['ingredients'] = cocktail['ingredients'].split('&nbsp;ml')
     elif ', ' in cocktail['ingredients']:
