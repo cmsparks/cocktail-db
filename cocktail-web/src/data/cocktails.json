@@ -157,7 +157,7 @@
     "prep": "Pour all ingredients into cocktail shaker filled with ice cubes. Shake and strain into a chilled cocktail glass.",
     "timing": "All day",
     "notes": "",
-    "color": "ly"
+    "color": "ly",
     "footnotes": "}}",
     "primary_alcohol": [
       "Gin",
@@ -1926,7 +1926,7 @@
     "flaming": "no",
     "ALCOHOLTYPE": "rum",
     "served": "stirred",
-    "color": "black"
+    "color": "black",
     "garnish": "",
     "drinkware": "mug",
     "ingredients": [
@@ -3742,7 +3742,7 @@
     "name": "Skittle Bomb - Rétreau",
     "type": "Cocktail",
     "drinkware": "pubshot",
-    "color": "br"
+    "color": "br",
     "ingredients": [
       "1 shot Cointreau",
       "1⁄2 can Red Bull"
@@ -3780,7 +3780,7 @@
     "type": "cocktail",
     "flaming": "",
     "cognac": "yes",
-    "color" "green",
+    "color": "green",
     "served": "straight",
     "garnish": "",
     "drinkware": "cocktail",
