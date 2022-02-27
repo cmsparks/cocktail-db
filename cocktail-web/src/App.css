@@ -40,7 +40,7 @@
   font-family: 'Avenir Next', 'Avenir';
   font-size: 12pt;
   border: none;
-  box-shadow: 0px 2px 5px rgba(121, 121, 121, 0.1), 0px 5px 10px #E2DBE8;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   border-radius: 50px;
 }
 
@@ -68,7 +68,7 @@
 }
 
 .cock-box {
-  box-shadow: 0px 4px 10px rgba(121, 121, 121, 0.1), 0px 10px 20px #E2DBE8;
+  box-shadow: 0px 4px 10px 5px rgba(0, 0, 0, 0.1);
   background: #FFFFFF;
   background-color: white;
   padding-bottom: 1px;
@@ -88,7 +88,7 @@
   margin: 10px;
   overflow-y: auto;
   margin-top: -20px;
-  /*border: black dashed 1px;*/
+  /* border: black dashed 1px; */
 }
 
 .cock-box-info::-webkit-scrollbar {
@@ -101,7 +101,7 @@
 
 .cock-box-info::-webkit-scrollbar-thumb {
   border-radius: 8px;
-  border: 2px solid white; /* should match background, can't be transparent */
+  border: 2px solid white;
   background-color: rgba(0, 0, 0, .5);
 }
 
@@ -168,7 +168,7 @@
 
 .shot-style {
   position:relative;
-  z-index: -1;
+  z-index: 1;
   border: 1px solid red;
 }
 
@@ -184,7 +184,7 @@
 }
 
 .lowball-style {
-  z-index: -1;
+  z-index: 1;
 
   position:relative;
   border: 1px dashed blue;
@@ -213,7 +213,7 @@
 }
 .collins-style {
 
-  z-index: -1;
+  z-index: 1;
 
   position:relative;
   border: 1px solid #bbbbbb;
@@ -232,7 +232,7 @@
 
 .martini-style {
 
-  z-index: -1;
+  z-index: 1;
 
   position:relative;
 
@@ -267,27 +267,32 @@
 .shot-display {
   position: relative;
   bottom: -60px;
+  z-index: 2;
 }
 
 .collins-display {
   position: relative;
   bottom: -75px;
+  z-index: 2;
 }
 
 .marg-display {
   position: relative;
   bottom: -80px;
+  z-index: 2;
 }
 
 
 .lowball-display {
   position: relative;
   bottom: -80px;
+  z-index: 2;
 }
 
 .martini-display {
   position: relative;
   bottom: -100px;
+  z-index: 2;
 }
 
 .marg-display > svg {
