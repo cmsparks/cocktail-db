@@ -18,6 +18,8 @@
 
 .cocktail-item {
   margin-top: 0.5em;
+  display: flex;
+  gap: 5px;
 }
 
 .cocktail > h1 {
@@ -68,4 +70,5 @@
 
 .item-key {
   font-weight: 600;
+  white-space: nowrap;
 }

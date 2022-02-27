@@ -16,7 +16,12 @@ function Cocktail(props) {
 
 function Item(props) {
   let {name, value} = props;
-  return <div className="cocktail-item"><span className="item-key">{name}</span> {value}</div>;
+  return (
+    <div className="cocktail-item">
+      <div className="item-key">{name}</div>
+      <div>{value}</div>
+    </div>
+  );
 }
 
 function IngredientsList(props) {
