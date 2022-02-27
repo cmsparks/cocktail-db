@@ -14,6 +14,7 @@
   padding: 80px;
   background: #FFFFFF;
   box-shadow: 0px 4px 10px rgba(121, 121, 121, 0.1), 0px 10px 20px #E2DBE8;
+  margin-top: 330px;
 }
 
 .cocktail > h1 {
@@ -26,4 +27,41 @@
 
 .item-key {
   font-weight: bold;
+}
+
+.marg-display {
+  position: relative;
+  bottom: 330px;
+  margin-bottom:-300px;
+}
+
+
+.lowball-display {
+  position: relative;
+  bottom: 240px;
+  margin-bottom:-220px;
+}
+
+
+.martini-display {
+  position: relative;
+  bottom: 330px;
+  margin-bottom:-300px;
+}
+
+.marg-display > svg {
+  margin: 0 auto;
+  margin-left: 15%;
+  width: 70%;
+}
+
+.lowball-display > svg {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.martini-display > svg {
+  margin: 0 auto;
+  margin-left: 5%;
+  width: 90%;
 }

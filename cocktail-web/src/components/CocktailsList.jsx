@@ -1,9 +1,12 @@
+import CocktailDisplay from './CocktailDisplay/CocktailDisplay'
+
 function CocktailsList(props) {
   return <div className="list-container">{props.data.map((e) => <Cocktail cocktail={e}/>)}</div>;
 }
 
 function Cocktail(props) {
   return <div className="cocktail">
+    <CocktailDisplay className="cock-display" cocktail={{}}/>
     <h2 className="cocktail-name">{props.cocktail.name}</h2>
     <Item name="Primary Alcohol" value={"TODO"}/>
     {props.cocktail.served ? <Item name="Served" value={props.cocktail.served}/>: null} 
