@@ -97,12 +97,12 @@ for cocktail in cocktails:
     'jäger': 'Jägermeister',
     'amaretto': 'Amaretto'
   }
-  cocktail['primary_alcohols'] = []
+  cocktail['primary_alcohol'] = []
   for key, val in primary_alcohols.items():
     if key in cocktail and cocktail[key] == 'yes':
-      cocktail['primary_alcohols'].append(val)
+      cocktail['primary_alcohol'].append(val)
   if 'other' in cocktail:
-      cocktail['primary_alcohols'].append(cocktail['other'])
+      cocktail['primary_alcohol'].append(cocktail['other'])
 f = open("cleaned_cocktails.json", "w")
 json.dump(cocktails, f)
 f.close()

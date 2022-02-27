@@ -5,7 +5,7 @@ function CocktailsList(props) {
 function Cocktail(props) {
   return <div className="cocktail">
     <h2 className="cocktail-name">{props.cocktail.name}</h2>
-    <Item name="Primary Alcohol" value={"TODO"}/>
+    {props.cocktail.primary_alcohol.length > 0 ? <Item name="Primary Alcohol" value={props.cocktail.primary_alcohol.join("; ")}/> : null}
     {props.cocktail.served ? <Item name="Served" value={props.cocktail.served}/>: null} 
     {props.cocktail.garnish ? <Item name="Garnish" value={props.cocktail.garnish}/> : null}
     {props.cocktail.drinkware ? <Item name="Glassware" value={props.cocktail.drinkware}/> : null}
