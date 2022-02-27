@@ -1,3 +1,27 @@
+.bg-aviation {
+  z-index:-5;
+  top: 0;
+  left: 0;
+  position:fixed;
+  width:100vw;
+  height:100vh;
+  /*background: linear-gradient(180deg, #FFD0E3 0%, #B9A2D0 100%);*/
+  background-color: #FFD0E3;
+  transition: background-color .2s;
+}
+.bg-of {
+  z-index:-5;
+  position:fixed;
+  top: 0;
+  left: 0;
+  width:100vw;
+  height:100vh;
+  background-color: #F4D2A9;
+  /*background: linear-gradient(180deg, #F4D2A9 0%, #FFB5B5 100%);*/
+  transition: background-color .2s;
+}
+
+
 .list-container {
   display: flex;
   flex-direction: row;

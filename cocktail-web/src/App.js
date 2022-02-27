@@ -6,11 +6,15 @@ import SearchBar from './components/SearchBar'
 
 function App() {
   let [search, setSearch] = useState("");
+  let [grad, setGrad] = useState(true);
   return (
-    <div className="app">
+    <div>
       <header className="App-header">
         <SearchBar setSearch={setSearch}/>
       </header>
+      <button onClick={e => setGrad(!grad)}>shift</button>
+      <div className={grad ? "bg-of" : "bg-aviation"}>
+      </div>
       <CocktailsList data={cocktails_data.filter(e => JSON.stringify(e).toLowerCase().includes(search))}>
       </CocktailsList>
     </div>

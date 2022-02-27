@@ -1,77 +1,208 @@
 export default function DisplayCocktail(props) {
-  let garnishes = getGarnishes(props.cocktail);
-  let color = getColor(props.cocktail);
-  
-  let r = Math.random()
-  if( r < .33) {
-    return <Marg color="#ffffee"/>;
-  }
-  if( r > .66 ){
-    return <Lowball low={true} garnish={true} twistCherry={true} color="#FF8A00"/>
-  }
-  return <Martini cherry={true} startGrad="#FBF5FF" stopGrad="#EBD1FF"/>
-  /*switch (cocktail.glassware) {
-    case "Pilsner glass":
-    case "pint":
-    case "Pint glass":
-    case "highball":
-    case "collins":
-      return <Collins cocktail={cocktail}/>
-    case "pubshot":
-      return <Pubshot cocktail={cocktail}/>
-    case "flute":
-      return <Flute cocktail={cocktail/}/>
-    case "coupe":
-      return <Coupe cocktail={cocktail}/>
-    case "goblet":
-      return <Goblet cocktail={cocktail}/>
-    case "shot":
-      return <Shot cocktail={cocktail}/>
-    case "cocktail":
-    case "Coupe or cocktail glass":
-      return <Martini cocktail={cocktail}/>
-    case "margarita":
-      return <Marg cocktail={cocktail}/>
-    case "Hurricane Glass":
-      return <Hurricane cocktail={cocktail}/>
-    case "old":
-    case "Old Fashioned Glass":
-    case "rocks":
-      return <Lowball cocktail={cocktail}/>
-  }
-  return <div>unimpl</div>;*/
-}
+  let cocktail = props.cocktail;
+  if (!("drinkware" in cocktail)) {
 
-function getGarnishes(cocktail) {
-  return false;
+    return <Lowball cocktail={cocktail}/>;
+ 
+  }
+  let g = cocktail.drinkware.toLowerCase();
+    if (["pilsner glass","pint","pint glass","highball","collins"].indexOf(g) > 0) {
+    return <Collins cocktail={cocktail}/>
+  }
+  else if (g.includes("shot")) {
+      return <Shot cocktail={cocktail}/>
+  }
+    else if (["flute", "cocktail", "coupe or cocktail glass", "coupe"].indexOf(g) > 0) {
+      return <Martini cocktail={cocktail}/>
+  }
+    else if (["hurricane glass", "margarita"].indexOf(g) > 0) {
+      return <Marg cocktail={cocktail}/>
+  }
+  return <Lowball cocktail={cocktail}/>;
 }
 
 function getColor(cocktail) {
-  return false;
+  if ("color" in cocktail) {
+    return cocktail.color;
+  }
+  return "#FF8A00"
 }
 
-function Flute(props) {
-  return <div>unimpl</div>;
+function hasIce(cocktail) {
+  if (!("served" in cocktail)) return false;
+  return cocktail.served.toLowerCase().includes("rocks") ||  cocktail.served.toLowerCase().includes("ice")
+}
+
+function isFizzy(cocktail) {
+  return (cocktail.name.toLowerCase().includes("fizz") || cocktail.ingredients.includes("soda")) || (JSON.stringify(cocktail).toLowerCase().includes("cola") || JSON.stringify(cocktail).toLowerCase().includes("beer"))
 }
 
 function Collins(props) {
-  return <div>unimpl</div>;
-}
+  let color = getColor(props.cocktail);
+  let lime = "garnish" in props.cocktail ? props.cocktail.garnish.toLowerCase().includes("lime") : null
 
-function Pubshot(props) {
-  return <div>unimpl</div>;
+  let mint = "garnish" in props.cocktail ? props.cocktail.garnish.toLowerCase().includes("mint") : null
+
+  let cherry = "garnish" in props.cocktail ? props.cocktail.garnish.toLowerCase().includes("cherry") : null
+
+  let orange = "garnish" in props.cocktail ? props.cocktail.garnish.toLowerCase().includes("orange") : null
+
+  let twist = "garnish" in props.cocktail ? props.cocktail.garnish.toLowerCase().includes("twist") : null
+
+  let lemon = "garnish" in props.cocktail ? props.cocktail.garnish.toLowerCase().includes("lemon") : null
+  let rocks = hasIce(props.cocktail);
+  let fizzy = isFizzy(props.cocktail)
+
+  return <div className="collins-display">
+    <svg width="140" height="198" viewBox="0 0 140 198" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M36.5151 197.246L27.2025 25.8895H115.296L105.983 197.246H36.5151Z" fill="white" fill-opacity="0.4" stroke="#79838D"/>
+    <path d="M31.2883 43.7408L111.176 43.7408L102.444 178.099H40.0549L31.2883 43.7408Z" fill="white" fill-opacity="0.4"/>
+    <rect width="24.4945" height="17.3196" transform="matrix(0.741809 -0.482913 1.18304 0.182969 42.4729 150.468)" fill="#F9FDFF"/>
+    <rect width="24.4945" height="17.3196" transform="matrix(0.741809 -0.482913 1.18304 0.182969 42.4729 150.468)" fill="#F9FDFF"/>
+    <rect width="24.4945" height="17.3196" transform="matrix(0.741809 -0.482913 1.18304 0.182969 42.4729 150.468)" fill="#F9FDFF"/>
+    <path d="M62.7584 153.637L80.9287 141.808L80.9287 160.906L62.7584 175.212L62.7584 153.637Z" fill="#F9FDFF"/>
+    <path d="M62.7584 153.637L80.9287 141.808L80.9287 160.906L62.7584 175.212L62.7584 153.637Z" fill="#F9FDFF"/>
+    <path d="M62.7584 153.637L80.9287 141.808L80.9287 160.906L62.7584 175.212L62.7584 153.637Z" fill="#E9F4FB"/>
+    <path d="M62.7584 153.637L42.504 150.471L42.5041 171.194L62.7584 175.212L62.7584 153.637Z" fill="#F9FDFF"/>
+    <path d="M62.7584 153.637L42.504 150.471L42.5041 171.194L62.7584 175.212L62.7584 153.637Z" fill="#F9FDFF"/>
+    <path d="M62.7584 153.637L42.504 150.471L42.5041 171.194L62.7584 175.212L62.7584 153.637Z" fill="#E2EEF5"/>
+    <path d="M101.981 165.56L92.5303 174.889L71.8213 175.893L81.2719 166.563L101.981 165.56Z" fill="#F9FDFF"/>
+    <path d="M101.981 165.56L92.5303 174.889L71.8213 175.893L81.2719 166.563L101.981 165.56Z" fill="#F9FDFF"/>
+    <path d="M101.981 165.56L92.5303 174.889L71.8213 175.893L81.2719 166.563L101.981 165.56Z" fill="#DDECF5"/>
+    <path d="M81.4719 166.522L72.1397 175.735L68.3106 157.025L77.146 145.385L81.4719 166.522Z" fill="#F9FDFF"/>
+    <path d="M81.4719 166.522L72.1397 175.735L68.3106 157.025L77.146 145.385L81.4719 166.522Z" fill="#F9FDFF"/>
+    <path d="M81.4719 166.522L72.1397 175.735L68.3106 157.025L77.146 145.385L81.4719 166.522Z" fill="#E2EEF5"/>
+    <path d="M81.4719 166.522L101.95 165.563L97.7947 145.261L77.146 145.385L81.4719 166.522Z" fill="#F9FDFF"/>
+    <path d="M81.4719 166.522L101.95 165.563L97.7947 145.261L77.146 145.385L81.4719 166.522Z" fill="#F9FDFF"/>
+    <path d="M81.4719 166.522L101.95 165.563L97.7947 145.261L77.146 145.385L81.4719 166.522Z" fill="#E9F4FB"/>
+    <path d="M72.5118 112.196L85.361 108.842L103.797 118.327L90.9482 121.681L72.5118 112.196Z" fill="#F9FDFF"/>
+    <path d="M72.5118 112.196L85.361 108.842L103.797 118.327L90.9482 121.681L72.5118 112.196Z" fill="#F9FDFF"/>
+    <path d="M72.5118 112.196L85.361 108.842L103.797 118.327L90.9482 121.681L72.5118 112.196Z" fill="#F9FDFF"/>
+    <path d="M90.7543 121.617L103.443 118.305L97.4039 136.422L83.9322 142.085L90.7543 121.617Z" fill="#F9FDFF"/>
+    <path d="M90.7543 121.617L103.443 118.305L97.4039 136.422L83.9322 142.085L90.7543 121.617Z" fill="#F9FDFF"/>
+    <path d="M90.7543 121.617L103.443 118.305L97.4039 136.422L83.9322 142.085L90.7543 121.617Z" fill="#E9F4FB"/>
+    <path d="M90.7544 121.617L72.5404 112.208L65.9877 131.868L83.9323 142.085L90.7544 121.617Z" fill="#F9FDFF"/>
+    <path d="M90.7544 121.617L72.5404 112.208L65.9877 131.868L83.9323 142.085L90.7544 121.617Z" fill="#F9FDFF"/>
+    <path d="M90.7544 121.617L72.5404 112.208L65.9877 131.868L83.9323 142.085L90.7544 121.617Z" fill="#E2EEF5"/>
+    <path d="M42.6228 138.397L39.2685 125.548L48.7538 107.111L52.1081 119.96L42.6228 138.397Z" fill="#F9FDFF"/>
+    <path d="M42.6228 138.397L39.2685 125.548L48.7538 107.111L52.1081 119.96L42.6228 138.397Z" fill="#F9FDFF"/>
+    <path d="M42.6228 138.397L39.2685 125.548L48.7538 107.111L52.1081 119.96L42.6228 138.397Z" fill="#F9FDFF"/>
+    <path d="M52.0435 120.154L48.7313 107.466L66.8488 113.505L72.5117 126.976L52.0435 120.154Z" fill="#F9FDFF"/>
+    <path d="M52.0435 120.154L48.7313 107.466L66.8488 113.505L72.5117 126.976L52.0435 120.154Z" fill="#F9FDFF"/>
+    <path d="M52.0435 120.154L48.7313 107.466L66.8488 113.505L72.5117 126.976L52.0435 120.154Z" fill="#E9F4FB"/>
+    <path d="M52.0435 120.154L42.6351 138.368L62.2951 144.921L72.5117 126.976L52.0435 120.154Z" fill="#F9FDFF"/>
+    <path d="M52.0435 120.154L42.6351 138.368L62.2951 144.921L72.5117 126.976L52.0435 120.154Z" fill="#F9FDFF"/>
+    <path d="M52.0435 120.154L42.6351 138.368L62.2951 144.921L72.5117 126.976L52.0435 120.154Z" fill="#E2EEF5"/>
+    <rect width="24.4945" height="17.3196" transform="matrix(0.810928 -0.354799 1.13705 0.374397 38.498 62.2914)" fill="#F9FDFF"/>
+    <rect width="24.4945" height="17.3196" transform="matrix(0.810928 -0.354799 1.13705 0.374397 38.498 62.2914)" fill="#F9FDFF"/>
+    <rect width="24.4945" height="17.3196" transform="matrix(0.810928 -0.354799 1.13705 0.374397 38.498 62.2914)" fill="#F9FDFF"/>
+    <path d="M57.9899 68.7424L77.8531 60.0518L74.723 78.8909L54.4536 90.0258L57.9899 68.7424Z" fill="#F9FDFF"/>
+    <path d="M57.9899 68.7424L77.8531 60.0518L74.723 78.8909L54.4536 90.0258L57.9899 68.7424Z" fill="#F9FDFF"/>
+    <path d="M57.9899 68.7424L77.8531 60.0518L74.723 78.8909L54.4536 90.0258L57.9899 68.7424Z" fill="#E9F4FB"/>
+    <path d="M57.9899 68.7424L38.5284 62.2991L35.1319 82.7421L54.4537 90.0258L57.9899 68.7424Z" fill="#F9FDFF"/>
+    <path d="M57.9899 68.7424L38.5284 62.2991L35.1319 82.7421L54.4537 90.0258L57.9899 68.7424Z" fill="#F9FDFF"/>
+    <path d="M57.9899 68.7424L38.5284 62.2991L35.1319 82.7421L54.4537 90.0258L57.9899 68.7424Z" fill="#E2EEF5"/>
+    <path d="M42.8124 90.0983L54.9788 84.7752L74.672 91.2596L62.5057 96.5827L42.8124 90.0983Z" fill="#F9FDFF"/>
+    <path d="M42.8124 90.0983L54.9788 84.7752L74.672 91.2596L62.5057 96.5827L42.8124 90.0983Z" fill="#F9FDFF"/>
+    <path d="M42.8124 90.0983L54.9788 84.7752L74.672 91.2596L62.5057 96.5827L42.8124 90.0983Z" fill="#DDECF5"/>
+    <path d="M62.3042 96.5492L74.318 91.2929L71.1879 110.132L58.768 117.833L62.3042 96.5492Z" fill="#F9FDFF"/>
+    <path d="M62.3042 96.5492L74.318 91.2929L71.1879 110.132L58.768 117.833L62.3042 96.5492Z" fill="#F9FDFF"/>
+    <path d="M62.3042 96.5492L74.318 91.2929L71.1879 110.132L58.768 117.833L62.3042 96.5492Z" fill="#E2EEF5"/>
+    <path d="M62.3042 96.5492L42.8427 90.106L39.4462 110.549L58.768 117.833L62.3042 96.5492Z" fill="#F9FDFF"/>
+    <path d="M62.3042 96.5492L42.8427 90.106L39.4462 110.549L58.768 117.833L62.3042 96.5492Z" fill="#F9FDFF"/>
+    <path d="M62.3042 96.5492L42.8427 90.106L39.4462 110.549L58.768 117.833L62.3042 96.5492Z" fill="#E9F4FB"/>
+    <path d="M73.8594 86.1707L86.0257 80.8477L105.719 87.3321L93.5527 92.6551L73.8594 86.1707Z" fill="#F9FDFF"/>
+    <path d="M73.8594 86.1707L86.0257 80.8477L105.719 87.3321L93.5527 92.6551L73.8594 86.1707Z" fill="#F9FDFF"/>
+    <path d="M73.8594 86.1707L86.0257 80.8477L105.719 87.3321L93.5527 92.6551L73.8594 86.1707Z" fill="#F9FDFF"/>
+    <path d="M93.3512 92.6216L105.365 87.3654L102.235 106.204L89.815 113.905L93.3512 92.6216Z" fill="#F9FDFF"/>
+    <path d="M93.3512 92.6216L105.365 87.3654L102.235 106.204L89.815 113.905L93.3512 92.6216Z" fill="#F9FDFF"/>
+    <path d="M93.3512 92.6216L105.365 87.3654L102.235 106.204L89.815 113.905L93.3512 92.6216Z" fill="#E9F4FB"/>
+    <path d="M93.3512 92.6216L73.8897 86.1784L70.4932 106.621L89.815 113.905L93.3512 92.6216Z" fill="#F9FDFF"/>
+    <path d="M93.3512 92.6216L73.8897 86.1784L70.4932 106.621L89.815 113.905L93.3512 92.6216Z" fill="#F9FDFF"/>
+    <path d="M93.3512 92.6216L73.8897 86.1784L70.4932 106.621L89.815 113.905L93.3512 92.6216Z" fill="#E2EEF5"/>
+    <path d="M72.5843 59.326L84.7506 54.0029L104.444 60.4873L92.2775 65.8104L72.5843 59.326Z" fill="#F9FDFF"/>
+    <path d="M72.5843 59.326L84.7506 54.0029L104.444 60.4873L92.2775 65.8104L72.5843 59.326Z" fill="#F9FDFF"/>
+    <path d="M72.5843 59.326L84.7506 54.0029L104.444 60.4873L92.2775 65.8104L72.5843 59.326Z" fill="#F9FDFF"/>
+    <path d="M92.0761 65.7769L104.09 60.5206L100.96 79.3598L88.5398 87.0603L92.0761 65.7769Z" fill="#F9FDFF"/>
+    <path d="M92.0761 65.7769L104.09 60.5206L100.96 79.3598L88.5398 87.0603L92.0761 65.7769Z" fill="#F9FDFF"/>
+    <path d="M92.0761 65.7769L104.09 60.5206L100.96 79.3598L88.5398 87.0603L92.0761 65.7769Z" fill="#E9F4FB"/>
+    <path d="M92.0761 65.7769L72.6145 59.3337L69.2181 79.7766L88.5399 87.0603L92.0761 65.7769Z" fill="#F9FDFF"/>
+    <path d="M92.0761 65.7769L72.6145 59.3337L69.2181 79.7766L88.5399 87.0603L92.0761 65.7769Z" fill="#F9FDFF"/>
+    <path d="M92.0761 65.7769L72.6145 59.3337L69.2181 79.7766L88.5399 87.0603L92.0761 65.7769Z" fill="#E2EEF5"/>
+    <path d="M55.9251 37.356L68.0914 32.0329L87.7847 38.5173L75.6183 43.8404L55.9251 37.356Z" fill="#F9FDFF"/>
+    <path d="M55.9251 37.356L68.0914 32.0329L87.7847 38.5173L75.6183 43.8404L55.9251 37.356Z" fill="#F9FDFF"/>
+    <path d="M55.9251 37.356L68.0914 32.0329L87.7847 38.5173L75.6183 43.8404L55.9251 37.356Z" fill="#F9FDFF"/>
+    <path d="M75.4169 43.8069L87.4307 38.5506L84.3006 57.3898L71.8807 65.0903L75.4169 43.8069Z" fill="#F9FDFF"/>
+    <path d="M75.4169 43.8069L87.4307 38.5506L84.3006 57.3898L71.8807 65.0903L75.4169 43.8069Z" fill="#F9FDFF"/>
+    <path d="M75.4169 43.8069L87.4307 38.5506L84.3006 57.3898L71.8807 65.0903L75.4169 43.8069Z" fill="#E9F4FB"/>
+    <path d="M75.4169 43.8069L55.9554 37.3637L52.5589 57.8066L71.8807 65.0903L75.4169 43.8069Z" fill="#F9FDFF"/>
+    <path d="M75.4169 43.8069L55.9554 37.3637L52.5589 57.8066L71.8807 65.0903L75.4169 43.8069Z" fill="#F9FDFF"/>
+    <path d="M75.4169 43.8069L55.9554 37.3637L52.5589 57.8066L71.8807 65.0903L75.4169 43.8069Z" fill="#E2EEF5"/>
+    <path d="M134.118 35.4955C133.456 37.9658 124.079 34.55 112.234 31.376C100.388 28.202 90.0739 28.2842 91.2215 24.0014C94.0448 13.4645 105.936 7.49577 117.782 10.6698C129.627 13.8438 136.941 24.9586 134.118 35.4955Z" fill="#599E00"/>
+    <path d="M132.096 35.4389C131.557 37.4511 122.989 34.4196 112.193 31.5269C101.397 28.6341 92.0661 28.452 93.0009 24.9634C95.3007 16.3805 105.917 11.7677 116.713 14.6604C127.508 17.5531 134.396 26.856 132.096 35.4389Z" fill="#C0E195"/>
+    <path d="M50.8004 22.6816C51.4623 25.152 41.6338 26.8822 29.7883 30.0562C17.9427 33.2302 9.05145 38.4586 7.90386 34.1757C5.08052 23.6389 12.3945 12.524 24.24 9.35003C36.0856 6.17602 47.9771 12.1448 50.8004 22.6816Z" fill="#FFE600"/>
+    <path d="M49.0209 23.6436C49.5601 25.6558 40.6245 27.3144 29.8287 30.2071C19.0328 33.0998 10.8606 37.6078 9.92584 34.1191C7.62606 25.5362 14.5135 16.2334 25.3093 13.3407C36.1051 10.4479 46.7211 15.0607 49.0209 23.6436Z" fill="#FFF59A"/>
+    <path d="M94.9458 58.4696C93.667 60.6844 85.5887 51.9124 74.2081 49.4471C63.5876 43.3154 50.5189 46.0682 52.7359 42.2283C58.1901 32.7812 71.2213 30.0936 81.8417 36.2253C92.4621 42.357 100.4 49.0225 94.9458 58.4696Z" fill="#65B500"/>
+    <path d="M55.5561 41.1878C68.1776 37.1688 85.866 40.7651 92.2414 51.4808" stroke="#61A011" stroke-linecap="round"/>
+    <path d="M56.338 39.7712C65.6334 35.589 77.9548 37.1149 81.6755 45.2046" stroke="#61A011" stroke-linecap="round"/>
+    <path d="M77.3085 35.6111C77.6432 39.238 62.8265 37.7547 56.4956 40.7631L69.8824 38.6097L84.6781 43.2996L90.2697 42.173" stroke="#61A011" stroke-linecap="round"/>
+    <path d="M80.8925 35.704C81.5545 38.1743 69.6395 37.6838 59.8489 43.9879C48.0034 47.1619 40.7089 58.3494 39.5613 54.0666C36.738 43.5297 44.0519 32.4149 55.8975 29.2409C67.7431 26.0669 78.0692 25.1671 80.8925 35.704Z" fill="#599E00"/>
+    <path d="M40.8199 51.3366C46.9027 39.57 61.9533 29.6054 74.0386 32.6744" stroke="#4F8C01" stroke-linecap="round"/>
+    <path d="M40.371 49.782C43.9866 40.2519 53.7782 32.6184 62.1293 35.7077" stroke="#4F8C01" stroke-linecap="round"/>
+    <path d="M52.2578 32.012C55.0591 34.34 43.5332 43.7681 41.1838 50.372L49.127 39.3834L62.9054 32.2375L66.0627 27.487" stroke="#4F8C01" stroke-linecap="round"/>
+    <path d="M66.355 51.3675C61.6316 51.2916 56.4459 45.6263 54.4434 42.8032C53.7069 42.0518 52.3615 39.5323 52.8723 35.4652C54.2951 34.7748 57.4002 34.2134 58.4374 37.4907C59.7339 41.5873 61.8848 43.3368 65.0159 42.0599C68.147 40.7831 75.8611 41.8992 80.249 43.4963C84.6369 45.0933 89.7009 53.8235 89.9954 57.6763C90.2899 61.529 84.0295 66.7416 82.1429 67.2631C80.2563 67.7847 78.8053 65.4442 78.239 62.3383C77.6727 59.2324 72.2592 51.4624 66.355 51.3675Z" fill="url(#paint0_linear_41_1193)"/>
+    <line x1="39.5418" y1="10.0537" x2="71.9293" y2="47.8296" stroke="#ABABAB"/>
+    <ellipse cx="38.8215" cy="8.93858" rx="2.49072" ry="4.1512" transform="rotate(-35 38.8215 8.93858)" fill="#C4C4C4"/>
+    <circle cx="65.1299" cy="39.039" r="8.21035" fill="url(#paint1_linear_41_1193)"/>
+    <circle cx="27.6577" cy="24.5499" r="23.6051" fill="#FFB800"/>
+    <circle cx="27.6576" cy="24.5499" r="21.6582" fill="#FFE297"/>
+    <path d="M31.2883 43.7408L111.176 43.7408L102.444 178.099H40.0549L31.2883 43.7408Z" fill="white" fill-opacity="0.4"/>
+    <path d="M31.2883 43.7408L111.176 43.7408L109.826 62.2914H33.4991L31.2883 43.7408Z" fill="white" fill-opacity="0.9"/>
+    <path d="M30.0957 25.3895H112.403L102.444 178.099H40.0548L30.0957 25.3895Z" fill="url(#paint2_linear_41_1193)"/>
+    <path d="M40.5232 177.599L30.6294 25.8895H111.869L101.975 177.599H40.5232Z" stroke="#D2D2D2" stroke-opacity="0.5"/>
+    <path d="M36.5151 197.246L27.2025 25.8895H115.296L105.983 197.246H36.5151Z" stroke="#79838D"/>
+    <defs>
+    <linearGradient id="paint0_linear_41_1193" x1="49.7241" y1="44.1147" x2="89.983" y2="58.7677" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#FF9D42"/>
+    <stop offset="0.9999" stop-color="#FFC700" stop-opacity="0.911458"/>
+    <stop offset="1" stop-color="#FFD542" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="paint1_linear_41_1193" x1="65.1299" y1="30.8286" x2="65.1299" y2="47.2493" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#F43232"/>
+    <stop offset="1" stop-color="#FF0000"/>
+    </linearGradient>
+    <linearGradient id="paint2_linear_41_1193" x1="36.1056" y1="105.566" x2="103.872" y2="105.182" gradientUnits="userSpaceOnUse">
+    <stop stop-color="white" stop-opacity="0.03"/>
+    <stop offset="0.200587" stop-color="white" stop-opacity="0.1"/>
+    <stop offset="0.380986" stop-color="white" stop-opacity="0.47"/>
+    <stop offset="0.787253" stop-color="white" stop-opacity="0.42"/>
+    <stop offset="1" stop-color="white" stop-opacity="0.08"/>
+    </linearGradient>
+    </defs>
+    </svg>
+  </div>;
 }
 
 function Shot(props) {
-  return <div>unimpl</div>;
-}
-
-function Goblet(props) {
-  return <div>unimpl</div>;
-}
-
-function Coupe(props) {
-  return <div>unimpl</div>;
+  let color = getColor(props.cocktail);
+  
+  return <div className="shot-display">
+    <svg width="53" height="73" viewBox="0 0 53 73" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M6.1466 72.3083L0.69993 1.21811H52.1878L46.7411 72.3083H6.1466Z" fill="white" fill-opacity="0.4" stroke="#79838D"/>
+    <path d="M6.78247 8.39375L46.289 8.39375L41.9706 64.5907H11.1178L6.78247 8.39375Z" fill={color} fill-opacity="0.4"/>
+    <path d="M5.79297 0.718109H47.0746L42.0795 64.5908H10.788L5.79297 0.718109Z" fill="url(#paint0_linear_41_1316)"/>
+    <path d="M11.2504 64.0908L6.3336 1.21811H46.534L41.6171 64.0908H11.2504Z" stroke="#D2D2D2" stroke-opacity="0.5"/>
+    <defs>
+    <linearGradient id="paint0_linear_41_1316" x1="8.80728" y1="34.253" x2="42.7953" y2="34.0218" gradientUnits="userSpaceOnUse">
+    <stop stop-color="white" stop-opacity="0.03"/>
+    <stop offset="0.200587" stop-color="white" stop-opacity="0.1"/>
+    <stop offset="0.380986" stop-color="white" stop-opacity="0.47"/>
+    <stop offset="0.787253" stop-color="white" stop-opacity="0.42"/>
+    <stop offset="1" stop-color="white" stop-opacity="0.08"/>
+    </linearGradient>
+    </defs>
+    </svg>
+  </div>;
 }
 
 function Martini(props) {
