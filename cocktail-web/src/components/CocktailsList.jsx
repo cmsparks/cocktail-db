@@ -1,5 +1,5 @@
 function CocktailsList(props) {
-  return <div className="list-container">{props.data.map((e) => <Cocktail cocktail={e}/>)}</div>;
+  return <div className="list-container">{props.data.map((e, idx) => <Cocktail key={idx} cocktail={e}/>)}</div>;
 }
 
 function Cocktail(props) {
@@ -20,10 +20,21 @@ function Item(props) {
 }
 
 function IngredientsList(props) {
-  return <>
-    <div className="cocktail-item">Ingredients</div>
-    <div className="ingedients">{props.ingredients}</div>
-  </>
+  let ingredients = props.ingredients !== undefined ?
+    <>
+      <div className="cocktail-item"><span className="item-key">Ingredients</span></div>
+      <div className="ingredients">
+        {props.ingredients.map((item, idx) =>
+          <div className="ingredient" key={idx}>
+            <div className="outer-bullet">
+              <div className="inner-bullet"/>
+            </div>
+            <div className="label">{item}</div>
+          </div>
+        )}
+      </div>
+    </> : <></>;
+  return ingredients;
 }
 
 function Instructions(props) {

@@ -20,8 +20,46 @@
   text-align: center;
 }
 
-.cocktail-item {
-  
+.ingredients {
+  margin: 0;
+  margin-left: 0.6em;
+}
+
+.ingredient {
+  margin-top: 0.5em;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.6em;
+}
+
+.ingredient > .outer-bullet {
+  width: 9px;
+  height: 9px;
+  display: inline;
+  background: black;
+  border-radius: 9px;
+  position: relative;
+}
+
+.outer-bullet > .inner-bullet {
+  width: 2px;
+  height: 2px;
+  display: inline;
+  background: transparent;
+  border: solid white 3px;
+  border-radius: 10px;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.ingredient > .label {
+  width: calc(100% - 9px - 0.6em);
+  overflow-wrap: break-word;
 }
 
 .item-key {
