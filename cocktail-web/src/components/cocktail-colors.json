@@ -10,29 +10,29 @@
 "accent_color": ""
 }, 'cream':{
 
-"drink_color": ,
-"bg_color": ,
-"accent_color": ""
+"drink_color": "#FFFDD0",
+"bg_color": "#FFE4BC",
+"accent_color": "#985200"
 }, 'black':{
 
-"drink_color": ,
-"bg_color": ,
-"accent_color": ""
+"drink_color": "#505050",
+"bg_color": "#CACACA",
+"accent_color": "#000000"
 }, 'amber':{
 
-"drink_color": ,
-"bg_color": ,
-"accent_color": ""
+"drink_color": "#FFBF00",
+"bg_color": "#F3D2A1",
+"accent_color": "#DBB634"
 }, 'brown':{
 
-"drink_color": ,
-"bg_color": ,
-"accent_color": ""
+"drink_color": "#573B1F",
+"bg_color": "#573B1F",
+"accent_color": "#573B1F"
 }, 'yellow':{
 
-"drink_color": ,
-"bg_color": ,
-"accent_color": ""
+"drink_color": "#FFFF00",
+"bg_color": "#EBEB99",
+"accent_color": "#7C7C07"
 }, 'lr':{
 
 "drink_color": ,
@@ -40,9 +40,9 @@
 "accent_color": ""
 }, 'orangered':{
 
-"drink_color": ,
-"bg_color": ,
-"accent_color": ""
+"drink_color": "#FF4500",
+"bg_color": "#E08D6E",
+"accent_color": "#FF4500"
 }, 'ly':{
 
 "drink_color": ,
@@ -50,29 +50,29 @@
 "accent_color": ""
 }, 'dark-brown':{
 
-"drink_color": ,
-"bg_color": ,
-"accent_color": ""
+"drink_color": "#5A2D00",
+"bg_color": "#130A00",
+"accent_color": "#5A2D00"
 }, 'pink':{
 
-"drink_color": ,
-"bg_color": ,
-"accent_color": ""
+"drink_color": "#FFC0CB",
+"bg_color": "#FFE7EB",
+"accent_color": "#FE657F"
 }, 'purple':{
 
-"drink_color": ,
-"bg_color": ,
-"accent_color": ""
+"drink_color": "#800080",
+"bg_color": "#FFC9FF",
+"accent_color": "#800080"
 }, 'creamblack':{
 
-"drink_color": ,
-"bg_color": ,
-"accent_color": ""
+"drink_color": "#FFFDD0",
+"bg_color": "#FFE4BC",
+"accent_color": "#985200"
 }, 'lightblue':{
 
-"drink_color": ,
-"bg_color": ,
-"accent_color": ""
+"drink_color": "#ADD8E6",
+"bg_color": "#D2F4FF",
+"accent_color": "#006F94"
 }, 'orange':{
 
 "drink_color": ,
