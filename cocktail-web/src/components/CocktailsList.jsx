@@ -29,10 +29,10 @@ function Cocktail(props) {
   let drink_Category = categorize(props.cocktail);
   return <div className={"cocktail"}>
     <CocktailDisplay className="cock-display" cocktail={props.cocktail}/>
-    <div className={'cock-box ' + drink_Category}>
+    <div className={'cock-box ' + drink_Category} style={{borderColor: colors[props.cocktail.color].accent_color}}>
       <div className='cock-display-stand'></div>
       <div className="cock-box-info">
-        <h2 className="cocktail-name">{props.cocktail.name}</h2>
+        <h2 className="cocktail-name" style={{color: colors[props.cocktail.color].accent_color}}>{props.cocktail.name}</h2>
         {props.cocktail.primary_alcohol.length > 0 ? <Item name="Primary Alcohol" value={props.cocktail.primary_alcohol.join(", ")}/> : null}
         {props.cocktail.served ? <Item name="Served" value={props.cocktail.served}/>: null} 
         {props.cocktail.garnish ? <Item name="Garnish" value={props.cocktail.garnish}/> : null}

@@ -1,13 +1,11 @@
-
 ['lp':{
-"drink_color": ,
-"bg_color": ,
-"accent_color": ""
+"drink_color": "#e2aefc",
+"bg_color": "#de6eea",
+"accent_color": "#593a68"
 }, 'or':{
-
-"drink_color": ,
-"bg_color": ,
-"accent_color": ""
+"drink_color": "#ea5c31",
+"bg_color": "#f4a086",
+"accent_color": "#ad2d06"
 }, 'cream':{
 
 "drink_color": ,
@@ -35,9 +33,9 @@
 "accent_color": ""
 }, 'lr':{
 
-"drink_color": ,
-"bg_color": ,
-"accent_color": ""
+"drink_color": "#f7968f",
+"bg_color": "#f9b3ae",
+"accent_color": "#aa3b33"
 }, 'orangered':{
 
 "drink_color": ,
@@ -45,9 +43,9 @@
 "accent_color": ""
 }, 'ly':{
 
-"drink_color": ,
-"bg_color": ,
-"accent_color": ""
+"drink_color": "#f9f98e",
+"bg_color": "#eded4b",
+"accent_color": "#a08209"
 }, 'dark-brown':{
 
 "drink_color": ,
@@ -65,7 +63,7 @@
 "accent_color": ""
 }, 'creamblack':{
 
-"drink_color": ,
+"drink_color": "",
 "bg_color": ,
 "accent_color": ""
 }, 'lightblue':{
@@ -75,47 +73,41 @@
 "accent_color": ""
 }, 'orange':{
 
-"drink_color": ,
-"bg_color": ,
-"accent_color": ""
+"drink_color": "#f98d00",
+"bg_color": "#fcac44",
+"accent_color": "#e58302"
 }, 'dr':{
 
-"drink_color": ,
-"bg_color": ,
-"accent_color": ""
+"drink_color": "#660d07",
+"bg_color": "#541611",
+"accent_color": "#2b0401",
 }, 'red':{
 
-"drink_color": ,
-"bg_color": ,
-"accent_color": ""
+"drink_color": "#db1900",
+"bg_color": "#c45040",
+"accent_color": "#aa1603"
 }, 'br':{
-
-"drink_color": ,
-"bg_color": ,
-"accent_color": ""
+"drink_color": "#b2410c",
+"bg_color": "#a85d3a",
+"accent_color": "#913207"
 }, 'green':{
-
-"drink_color": ,
-"bg_color": ,
-"accent_color": ""
+"drink_color": "#4fef2b",
+"bg_color": "#aef29f",
+"accent_color": "#146802",
 }, 'bg':{
-
-"drink_color": ,
-"bg_color": ,
-"accent_color": ""
+"drink_color": "#4fef2b",
+"bg_color": "#aef29f",
+"accent_color": "#146802",
 }, 'clear':{
-
-"drink_color": ,
-"bg_color": ,
-"accent_color": ""
+"drink_color": "#FFFFFF",
+"bg_color": "#FDFDFF",
+"accent_color": "#8888FF"
 }, 'by':{
-
-"drink_color": ,
-"bg_color": ,
-"accent_color": ""
+"drink_color": "#847306",
+"bg_color": "#aaa05c",
+"accent_color": "#4f3303"
 }, 'darkred': {
-
-"drink_color": ,
-"bg_color": ,
-"accent_color": ""
+"drink_color": "#660d07",
+"bg_color": "#541611",
+"accent_color": "#2b0401",
 }]

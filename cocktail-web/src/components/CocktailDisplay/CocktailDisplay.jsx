@@ -1,3 +1,5 @@
+import colors from '../cocktail-colors.json';
+
 export default function DisplayCocktail(props) {
   let cocktail = props.cocktail;
   if (!("drinkware" in cocktail)) {
@@ -23,7 +25,7 @@ export default function DisplayCocktail(props) {
 
 function getColor(cocktail) {
   if ("color" in cocktail) {
-    return cocktail.color;
+    return colors[cocktail.color].drink_color;
   }
   return "#FF8A00"
 }
