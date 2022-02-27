@@ -8,7 +8,6 @@
     ],
     "prep": "Shake in an iced cocktail shaker, and strain into a cocktail glass. Garnish with a lemon twist.",
     "name": "20th Century",
-    "color": "ly",
     "primary_alcohol": []
   },
   {
@@ -24,7 +23,6 @@
     ],
     "prep": "Pour whiskey into Collins glass filled with ice.  Fill to desired level with 7 Up. Stir lightly.",
     "categories": "no\n}}",
-    "color": "by",
     "primary_alcohol": []
   },
   {
@@ -36,7 +34,6 @@
       "1 cup cointreau (triplesec)"
     ],
     "name": "Agua de Sevilla",
-    "color": "ly",
     "primary_alcohol": []
   },
   {
@@ -55,7 +52,6 @@
       "4.5 cl sweet vermouth",
       "2 dashes orange bitters"
     ],
-    "color": "bg",
     "prep": "Combine ingredients with ice in a mixing glass. Strain into a chilled glass. Garnish with an orange peel or twist.",
     "primary_alcohol": []
   },
@@ -80,7 +76,6 @@
     "prep": "",
     "notes": "",
     "footnotes": "}}",
-    "color": "orange",
     "primary_alcohol": [
       "Amaretto",
       "Southern Comfort; sloe gin"
@@ -124,7 +119,6 @@
       "3 cl red vermouth",
       "A splash of soda water"
     ],
-    "color":"lr",
     "prep": "Pour the Campari and vermouth over ice into an old fashioned glass, add a splash of soda water and garnish with half orange slice and a lemon twist.",
     "timing": "Before dinner",
     "notes": "",
@@ -157,7 +151,6 @@
     "prep": "Pour all ingredients into cocktail shaker filled with ice cubes. Shake and strain into a chilled cocktail glass.",
     "timing": "All day",
     "notes": "",
-    "color": "ly"
     "footnotes": "}}",
     "primary_alcohol": [
       "Gin",
@@ -182,8 +175,6 @@
       "1.5 cl (1 part) Cointreau"
     ],
     "prep": "Mix in a shaker, then pour into a chilled glass.  Garnish and serve.",
-
-    "color": "ly",
     "primary_alcohol": [
       "Vodka"
     ]
@@ -207,7 +198,6 @@
       "3 cl brown crème de cacao",
       "3 cl light cream"
     ],
-    "color":"cream",
     "prep": "Shake all ingredients with ice and strain contents into a cocktail glass. Sprinkle nutmeg on top and serve.",
     "timing": "After dinner",
     "notes": "",
@@ -260,7 +250,6 @@
       "15 ml maraschino liqueur",
       "1 barspoon crème de violette"
     ],
-    "color": "lp",
     "prep": "Add all ingredients into cocktail shaker filled with ice. Shake well and strain into cocktail glass. Garnish with a cherry.",
     "timing": "All day",
     "notes": "",
@@ -289,7 +278,6 @@
       "2 cl Baileys Irish Cream",
       "2 cl Grand Marnier"
     ],
-    "color": "orange",
     "prep": "Layer ingredients into a shot glass.  Serve with a stirrer.",
     "timing": "After Dinner",
     "notes": "",
@@ -317,7 +305,6 @@
       "Vodka or Bacon vodka"
     ],
     "prep": "",
-    "color": "red",
     "notes": "",
     "footnotes": "}}",
     "primary_alcohol": [
@@ -336,7 +323,6 @@
       "3⁄4 shot (3 parts) coffee liqueur",
       "1⁄4 shot (1 part) Irish cream"
     ],
-    "color":"dark-brown",
     "primary_alcohol": []
   },
   {
@@ -352,7 +338,6 @@
     "served": "straight",
     "garnish": "Optionally garnish with lemon or orange zest",
     "drinkware": "cocktail",
-    "color":"ly",
     "ingredients": [
       "52.5 ml dry gin",
       "22.5 ml lemon juice",
@@ -387,7 +372,6 @@
     "prep": "Shake together with ice.  Strain into glass and serve.",
     "timing": "Before dinner",
     "notes": "",
-    "color": "pink",
     "footnotes": "}}",
     "primary_alcohol": [
       "Rum"
@@ -436,7 +420,6 @@
       "10 cl (2 parts) Prosecco",
       "5 cl (1 part) fresh peach purée"
     ],
-    "color":"pink",
     "prep": "Pour peach purée into chilled glass, add sparkling wine. Stir gently.",
     "notes": "Traditionally a Bellini uses white peaches for the fruit.",
     "footnotes": "}}",
@@ -468,7 +451,6 @@
     "prep": "Pour all ingredients into shaker with ice cubes, shake, strain into chilled cocktail glass.",
     "timing": "All Day",
     "notes": "",
-    "color": "yellow",
     "footnotes": "}}",
     "primary_alcohol": [
       "Cognac",
@@ -512,7 +494,6 @@
       "2.5 cl Irish Whisky",
       "2.5 cl Irish Mist"
     ],
-    "color":"darkred",
     "prep": "Fill a rocks glass with ice cubes and then add the Irish whiskey and then Irish Mist. Stir gently.",
     "notes": "Traditionally a Black Nail uses blood red oranges for the fruit.",
     "footnotes": "}}",
@@ -536,7 +517,6 @@
       "50  Vodka",
       "20  Coffee liqueur"
     ],
-    "color":"creamblack",
     "prep": "Pour the ingredients into the old fashioned glass filled with ice cubes. Stir gently.",
     "timing": "After dinner",
     "notes": "",
@@ -563,7 +543,6 @@
       "50  Vodka",
       "20  Coffee liqueur"
     ],
-    "color":"black",
     "prep": "Pour the ingredients into the old fashioned glass filled with ice cubes. Stir gently.",
     "timing": "After dinner",
     "notes": "",
@@ -582,7 +561,6 @@
     "ingredients": [
       "Pale ale or lager and stout or porter"
     ],
-    "color":"black",
     "primary_alcohol": []
   },
   {
@@ -604,7 +582,6 @@
     "ingredients": [
       "Stout and Champagne"
     ],
-    "color":"black",
     "prep": "Mix equal parts stout and Champagne.",
     "notes": "",
     "footnotes": "}}",
@@ -633,7 +610,6 @@
       "dash Angostura bitters",
       "dash Absinthe"
     ],
-    "color": "by",
     "prep": "Fill mixing glass with gin, vermouth, and bitters. Add ice and stir until chilled, then add strain into a chilled glass. Garnish with a lemon peel.",
     "primary_alcohol": []
   },
@@ -658,7 +634,6 @@
       "Celery salt",
       "Black pepper"
     ],
-    "color": "red",
     "prep": "Stirring gently, pour all ingredients into highball glass. Garnish.",
     "primary_alcohol": [
       "Vodka"
@@ -683,7 +658,6 @@
       "30  bitter Campari",
       "30  sweet red vermouth"
     ],
-    "color": "brown",
     "prep": "Pour all ingredients into mixing glass with ice cubes. Stir well. Strain into a chilled cocktail glass.",
     "notes": "",
     "footnotes": "}}",
@@ -703,7 +677,6 @@
     "rum": "",
     "gin": "",
     "triplesec": "",
-        "color": "lightblue",
     "served": "rocks",
     "garnish": "lemon slice or Garnish the brim with an orange slice",
     "drinkware": "highball",
@@ -733,7 +706,6 @@
       "3 cl (1 part) Crème de cacao (brown)",
       "3 cl (1 part) cream"
     ],
-    "color":"cream",
     "prep": "Shake and strain into a chilled cocktail glass. Sprinkle with fresh ground nutmeg.",
     "notes": "",
     "footnotes": "}}",
@@ -759,7 +731,6 @@
       "12.5 ml Sugar Syrup",
       "15 ml Crème de Mûre"
     ],
-    "color":"red",
     "prep": "Pour all ingredients into a cocktail shaker except the Crème de Mûre, shake well with ice, strain into chilled old fashioned glass filled with crushed ice, then pour the blackberry liqueur (Crème de Mûre) over the top of the drink, in a circular motion.",
     "timing": "All Day",
     "notes": "",
@@ -783,7 +754,6 @@
       "3 dashes Bénédictine",
       "Lemon peel"
     ],
-    "color":"red",
     "prep": "Put all liquid ingredients in cocktail shaker filled with ice. Squeeze lemon peel on top. Stir, strain into glass.",
     "notes": "",
     "footnotes": "{{dagger}}",
@@ -806,7 +776,6 @@
       "3/4 shot fresh lemon juice",
       "1 spoon orange marmalade"
     ],
-    "color":"ly",
     "prep": "Mix or shake in cocktail shaker filled with ice cubes. Strain into glass and serve.",
     "categories": "}}",
     "primary_alcohol": [
@@ -832,7 +801,6 @@
     ],
     "prep": "Stir together and serve over ice.",
     "notes": "",
-    "color":"orange",
     "footnotes": "}}",
     "primary_alcohol": []
   },
@@ -854,7 +822,6 @@
       "1 cl (2 parts) Dry Vermouth",
       "1.5 cl (3 parts) Orange juice"
     ],
-    "color":"orange",
     "prep": "Pour into cocktail shaker all ingredients with ice cubes, shake well. Strain in chilled cocktail or martini glass.",
     "notes": "",
     "footnotes": "}}",
@@ -879,7 +846,6 @@
       "1/4 oz Picon or a few dashes of Angostura bitters",
       "Maraschino cherry (Garnish)"
     ],
-    "color": "brown",
     "prep": "Stirred over ice, strained into a chilled glass, garnished, and served straight up.",
     "notes": "",
     "footnotes": "{{cite web|url",
@@ -905,7 +871,6 @@
       "Sprinkle 1⁄4 teaspoon to taste cinnamon",
       "Sprinkle 1⁄4 teaspoon to taste nutmeg"
     ],
-    "color":"brown",
     "primary_alcohol": [
       "Rum"
     ]
@@ -930,7 +895,6 @@
       "2 ounces Milk or Half & Half",
       "1 cup ice"
     ],
-    "color": "cream",
     "prep": "Blend all the ingredients together in a blender, including the ice, and then strain into a hurricane glass. Place cherry on top of the drink as a garnish and serve. Whipped cream can also be added as a garnish to the top of the drink before the cherry.",
     "primary_alcohol": []
   },
@@ -955,7 +919,6 @@
       "Lime wedge",
       "1 crisp celery stalk"
     ],
-    "color": "red",
     "prep": "Rim glass with celery salt, and a lime wedge.",
     "Origin": "Alberta}}",
     "primary_alcohol": [
@@ -979,7 +942,6 @@
       "1 lime cut into small wedges",
       "4 teaspoons white cane sugar"
     ],
-    "color":"clear",
     "prep": "Place lime and sugar into a double old fashioned glass and muddle gently. Fill the glass with cracked ice and add Cachaça. Stir gently to involve ingredients.",
     "notes": "CAIPIROSKA – Instead of Cachaça use Vodka\n}}",
     "primary_alcohol": [
@@ -1015,7 +977,6 @@
       "Vodka",
       "Cranberry juice"
     ],
-    "color":"red",
     "prep": "Build all ingredients in a highball glass filled with ice. Garnish with lime wedge.",
     "notes": "",
     "footnotes": "}}",
@@ -1038,7 +999,6 @@
       "one part Hot Damn Cinnamon Schnapps",
       "one part Frangelico"
     ],
-    "color": "cream",
     "notes": "",
     "footnotes": "}}",
     "primary_alcohol": [
@@ -1065,7 +1025,6 @@
       "1 cl fresh lemon juice",
       "2 dashes orange bitters"
     ],
-    "color": "clear",
     "prep": "Pour all ingredients into shaker with ice cubes. Shake well. Strain into chilled cocktail glass. Garnish with a lemon twist and a maraschino cherry. Serve without a straw.",
     "timing": "All Day",
     "notes": "",
@@ -1091,7 +1050,6 @@
       "Bitters",
       "Champagne (optional)"
     ],
-    "color": "brown",
     "prep": "Shake or stir with ice.",
     "notes": "",
     "footnotes": "{{dagger}}",
@@ -1116,7 +1074,6 @@
       "1/4 oz lemon juice",
       "1/4 oz creme de cassis"
     ],
-    "color": "orange",
     "prep": "Pour the tequila and unfiltered apple cider into glass over ice.  Add the lemon juice and creme de cassis and stir.  Garnish and serve.",
     "notes": "",
     "footnotes": "",
@@ -1143,7 +1100,6 @@
       "1 tsp lemon juice (1 part)",
       "1 tsp yellow chartreuse (1 part)"
     ],
-    "color": "orange",
     "prep": "Combine ingredients with ice in cocktail shaker; shake well, then strain into cocktail glass, pouring over ice.",
     "notes": "0.5 tsp of simple sugar solution or superfine sugar can added for a sweeter cocktail. The Cloister is normally made using dry gin. The cocktail can be served off the rocks, with no ice in the glass. This recipe, more suited to a larger cocktail glass, calls for:\n*1.5 oz gin (6 parts)\n*0.5 oz grapefruit juice (2.5 parts)\n*0.25 oz lemon juice (1 part)\n*0.5 oz yellow chartreuse (1 part)",
     "footnotes": "}}",
@@ -1170,7 +1126,6 @@
       "0.5cl Dry Vermouth",
       "1 egg white or 20 ml aquafaba or 4 drops cocktail foamer"
     ],
-    "color": "pink",
     "prep": "Dry shake ingredients to emulsify, add ice, shake and served straight up.",
     "timing": "All Day",
     "notes": "",
@@ -1197,7 +1152,6 @@
       "1/2 oz Lime Juice",
       "Dash each bitters & grenadine"
     ],
-    "color":"cream",
     "prep": "",
     "notes": "",
     "footnotes": "}}",
@@ -1220,7 +1174,6 @@
       "1 ounce of guava juice.",
       "1 tbsp sugar"
     ],
-    "color":"orange",
     "prep": "In a mixing glass, mix sugar and fruit slices and press to juice fruit, add ice, guava juice and cachaça, mix again - pour into tall glass.",
     "notes": "",
     "footnotes": "This cocktail was invented at Liberty Bar in Seattle, Washington in honor of Royce Gracie.\n}}",
@@ -1246,7 +1199,6 @@
       "Mint leaves",
       "1 sprig of mint"
     ],
-    "color": "clear",
     "prep": "In a shaker add white rum, Malibu, lime juice, some mint leaves and crushed ice, garnish with the sprig of mint.",
     "notes": "",
     "footnotes": "}}",
@@ -1260,7 +1212,6 @@
     "image": "Columbia-cocktail.jpg",
     "vodka": "yes",
     "curacao": "yes",
-    "color": "lr",
     "drinkware": "highball",
     "ingredients": [
       "2 parts vodka or brandy",
@@ -1292,7 +1243,6 @@
       ".5 oz. Sweet vermouth",
       "Mint sprig"
     ],
-    "color": "lr",
     "prep": "Shake with ice and strain into chilled cocktail glass, add mint.",
     "timing": "",
     "notes": "",
@@ -1318,7 +1268,6 @@
       "1.5 cl Fresh lime juice",
       "3 cl Cranberry juice"
     ],
-    "color": "pink",
     "prep": "Shake all ingredients in cocktail shaker filled with ice. Strain into a large cocktail glass. Garnish with lime slice.",
     "timing": "All day",
     "notes": "The drink should be a frothy bright pink color",
@@ -1343,7 +1292,6 @@
       "1 part Fernet Branca",
       "1 part White Crème de menthe"
     ],
-    "color":"brown",
     "prep": "Shake ingredients together with ice, and strain into a glass.",
     "notes": "",
     "footnotes": "}}",
@@ -1364,7 +1312,6 @@
     ],
     "prep": "Mix all ingredients in a pot, heat, then set aflame. Put out when about 1/3 of the drink has burned away. Serve hot in coffee mugs or glasses.",
     "image": "Cremaet al Centre Municipal de Pilota Valenciana de Borbotó.jpg|caption",
-    "color": "brown",
     "primary_alcohol": [
       "Rum"
     ]
@@ -1388,7 +1335,6 @@
       "2 cl (1.5 parts) grenadine syrup",
       "Garnish with lemon slice"
     ],
-    "color": "pink",
     "prep": "Fill highball (tall) glass with ice. Mix lime soda, lemonade, guava nectar, and grenadine syrup together to form a mixture. Pour rum into glasses over ice, then evenly layer the guava mixture over the rum. Mix as desired. Garnish with a half-slice of lemon.",
     "primary_alcohol": []
   },
@@ -1410,7 +1356,6 @@
       "2 cl lime juice",
       "2 bar spoons superfine sugar"
     ],
-    "color": "ly",
     "prep": "In a cocktail shaker add all ingredients. Stir well to dissolve the sugar. Add ice and shake. Strain into chilled cocktail glass.",
     "timing": "Happy Hour / Summer drink",
     "notes": "",
@@ -1438,7 +1383,6 @@
       "1/2 measure orange juice",
       "1/4 measure orange curacao or triple sec"
     ],
-    "color": "orange",
     "prep": "Shake with ice and strain into a chilled large cocktail glass",
     "notes": "",
     "footnotes": "}}",
@@ -1463,7 +1407,6 @@
       "60 ml Goslings Rum",
       "100 ml Ginger Beer"
     ],
-    "color": "amber",
     "primary_alcohol": [
       "Rum"
     ]
@@ -1482,7 +1425,6 @@
     "served": "",
     "garnish": "",
     "drinkware": "flute",
-    "color": "ly",
     "ingredients": [
       "Champagne",
       "Absinthe"
@@ -1508,7 +1450,6 @@
     "served": "straight",
     "garnish": "mint leaves",
     "drinkware": "cocktail",
-    "color": "ly",
     "ingredients": [
       "6 cl gin",
       "2 dashes peach bitters",
@@ -1534,7 +1475,6 @@
     "served": "rocks",
     "garnish": "Orange wedge/peel",
     "drinkware": "highball",
-    "color": "orange",
     "ingredients": [
       "3 oz. ginger beer",
       "3 oz. orange juice",
@@ -1557,7 +1497,6 @@
     "flaming": "",
     "rum": "yes",
     "served": "straight",
-    "color": "lr",
     "garnish": "twist of orange peel, optional cherry",
     "drinkware": "cocktail",
     "ingredients": [
@@ -1579,7 +1518,6 @@
     "tennessee": "yes",
     "served": "rocks",
     "drinkware": "collins",
-    "color": "ly",
     "ingredients": [
       "1 part Jack Daniel's Tennessee Whiskey",
       "3 parts lemonade",
@@ -1601,7 +1539,6 @@
     "type": "cocktail",
     "gin": "no",
     "served": "rocks",
-    "color": "purple",
     "garnish": "grapefruit slice, maraschino cherry",
     "drinkware": "highball",
     "ingredients": [
@@ -1631,7 +1568,6 @@
       "1/2 cup Apple Juice",
       "1/2 cup Lemonade"
     ],
-    "color": "ly",
     "prep": "Combine all three ingredients into a chilled glass and serve with ice and garnish.",
     "primary_alcohol": [
       "Vodka"
@@ -1643,7 +1579,6 @@
     "beer": "yes",
     "amaretto": "yes",
     "highproof": "yes",
-    "color": "clear",
     "ingredients": [
       "1 pint (~13 parts) beer",
       "3 parts Amaretto",
@@ -1691,7 +1626,6 @@
     "image": "French 75.jpg",
     "caption": "",
     "garnish": "",
-    "color": "ly",
     "type": "wine",
     "flaming": "",
     "champagne": "yes",
@@ -1719,7 +1653,6 @@
     "type": "cocktail",
     "flaming": "",
     "cognac": "yes",
-    "color": "amber",
     "grand marneir": "yes",
     "garnish": "",
     "drinkware": "old",
@@ -1744,7 +1677,6 @@
     "imagesize": "220",
     "caption": "A \"volcano bowl\" flaming cocktail",
     "type": "mixed",
-    "color": "orange",
     "rum": "yes",
     "brandy": "no",
     "curaçao": "no",
@@ -1772,7 +1704,6 @@
     "caption": "",
     "type": "cocktail",
     "flaming": "",
-    "color": "clear",
     "gin": "yes",
     "served": "straight",
     "garnish": "silverskin onion",
@@ -1794,7 +1725,6 @@
     "image": "Gimlet cocktail.jpg",
     "caption": "A vodka gimlet with mint",
     "type": "cocktail",
-    "color": "clear",
     "flaming": "no",
     "gin": "yes",
     "served": "straight",
@@ -1822,7 +1752,6 @@
     "flaming": "",
     "orange": "yes",
     "other": "Galliano",
-    "color": "cream",
     "served": "straight",
     "garnish": "",
     "drinkware": "cocktail",
@@ -1848,7 +1777,6 @@
     "type": "highball",
     "flaming": "",
     "gin": "yes",
-    "color": "clear",
     "served": "Poured over cubes of ices (\"on the rocks\")",
     "garnish": "A slice of lime",
     "drinkware": "Highball glass or rocks glass",
@@ -1873,7 +1801,6 @@
     "flaming": "",
     "vodka": "yes",
     "amaretto": "yes",
-    "color":"clear",
     "served": "rocks",
     "garnish": "",
     "drinkware": "old",
@@ -1900,7 +1827,6 @@
     "gin": "yes",
     "vermouth": "yes",
     "served": "up",
-    "color": "red",
     "garnish": "Orange zest",
     "drinkware": "cocktail",
     "ingredients": [
@@ -1926,7 +1852,6 @@
     "flaming": "no",
     "ALCOHOLTYPE": "rum",
     "served": "stirred",
-    "color": "black"
     "garnish": "",
     "drinkware": "mug",
     "ingredients": [
@@ -1949,7 +1874,6 @@
     "cacao": "yes",
     "menthe": "yes",
     "served": "Up",
-    "color": "green",
     "garnish": "",
     "drinkware": "cocktail",
     "ingredients": [
@@ -1978,7 +1902,6 @@
     "anise": "yes",
     "served": "stirred",
     "garnish": "frosted glass",
-    "color": "clear",
     "drinkware": "highball",
     "ingredients": [
       "One part Herbsaint",
@@ -2001,7 +1924,6 @@
     "type": "mixed",
     "flaming": "",
     "vodka": "yes",
-    "color": "orange",
     "served": "rocks",
     "garnish": "orange slice and maraschino cherry",
     "drinkware": "highball",
@@ -2026,7 +1948,6 @@
     "type": "mixed",
     "Vodka": "yes",
     "served": "rocks",
-    "color": "ly",
     "drinkware": "Old Fashioned glass",
     "ingredients": [
       "5 cl (1 parts) gin",
@@ -2046,7 +1967,6 @@
     "brandy": "yes",
     "drinkware": "highball",
     "served": "rocks",
-    "color": "ly",
     "garnish": "Long spiral of lemon zest",
     "ingredients": [
       "4 cL (1 part) Brandy",
@@ -2070,7 +1990,6 @@
     "flaming": "",
     "anise": "yes",
     "served": "stirred",
-    "color": "clear",
     "garnish": "frosted glass",
     "drinkware": "highball",
     "ingredients": [
@@ -2092,7 +2011,6 @@
     "caption": "",
     "type": "cocktail",
     "whiskey": "yes",
-    "color": "ly",
     "served": "On the rocks; poured over ice",
     "garnish": "",
     "drinkware": "highball",
@@ -2117,7 +2035,6 @@
     "flaming": "no",
     "ALCOHOLTYPE": "[[Rum]]",
     "served": "",
-    "color": "by",
     "garnish": "",
     "drinkware": "cup",
     "ingredients": [
@@ -2139,7 +2056,6 @@
     "image": "15-09-26-RalfR-WLC-0059.jpg",
     "caption": "",
     "type": "wine",
-    "color": "ly",
     "flaming": "",
     "wine": "",
     "sparkling": "yes",
@@ -2166,7 +2082,6 @@
     "type": "cocktail",
     "flaming": "",
     "rum": "yes",
-    "color": "by",
     "served": "\"On the rocks\"; poured over ice",
     "garnish": "",
     "drinkware": "hurricane lamp–shaped Hurricane glass",
@@ -2194,7 +2109,6 @@
     "type": "Cocktail",
     "flaming": "",
     "irishw": "yes",
-    "color": "black",
     "served": "Hot",
     "garnish": "",
     "drinkware": "coffee",
@@ -2215,7 +2129,6 @@
     "brandy": "yes",
     "served": "straight",
     "garnish": "lemon zest",
-    "color": "red",
     "drinkware": "cocktail",
     "ingredients": [
       "4 parts applejack",
@@ -2237,7 +2150,6 @@
     "stout": "no",
     "irishw": "no",
     "irishc": "no",
-    "color": "black",
     "drinkware": "pubshot",
     "ingredients": [
       "Guinness stout",
@@ -2260,7 +2172,6 @@
     "midori": "yes",
     "orange": "yes",
     "served": "straight",
-    "color": "clear",
     "garnish": "Honeydew melon slice",
     "drinkware": "cocktail",
     "ingredients": [
@@ -2281,7 +2192,6 @@
     "image": "File:Jack & Coke at Encounter (11300470795).jpg",
     "type": "highball",
     "tennessee": "yes",
-    "color": "brown",
     "served": "rocks",
     "drinkware": "collins",
     "ingredients": [
@@ -2305,7 +2215,6 @@
     "gin": "yes",
     "served": "straight",
     "garnish": "",
-    "color": "clear",
     "drinkware": "cocktail",
     "ingredients": [
       "2 parts Gin",
@@ -2328,7 +2237,6 @@
     "image": "Jello Shots.jpg",
     "caption": "",
     "type": "[[Mixed drink]]",
-    "color": "green",
     "flaming": "",
     "ALCOHOLTYPE": "",
     "served": "cold, set in a solid state",
@@ -2354,7 +2262,6 @@
     "caption": "",
     "type": "Cocktail",
     "flaming": "no",
-    "color": "clear",
     "gin": "yes",
     "served": "rocks",
     "garnish": "Lemon slice and maraschino cherry",
@@ -2442,7 +2349,6 @@
     "caption": "A shot of Jägermeister dropped into a glass of Red Bull, creating a Jägerbomb",
     "type": "",
     "beer": "no",
-    "color": "amber",
     "drinkware": "pubshot",
     "notes": "",
     "footnotes": "}}",
@@ -2458,7 +2364,6 @@
     "moonshine": "yes",
     "vodka": "yes",
     "everclear": "yes",
-    "color": "brown",
     "served": "Hot",
     "drinkware": "cup",
     "ingredients": [
@@ -2486,7 +2391,6 @@
     "vodka": "yes",
     "other": "Triple sec",
     "served": "straight",
-    "color": "ly",
     "garnish": "Lime slice",
     "drinkware": "cocktail",
     "ingredients": [
@@ -2514,7 +2418,6 @@
     "champagne": "yes",
     "served": "",
     "garnish": "",
-    "color": "red",
     "drinkware": "flute",
     "ingredients": [
       "9 cl (3 ounces) (9 parts) champagne",
@@ -2537,7 +2440,6 @@
     "type": "wine",
     "flaming": "",
     "wine": "yes",
-    "color": "red",
     "served": "straight",
     "garnish": "",
     "drinkware": "winew",
@@ -2565,7 +2467,6 @@
     "vodka": "yes",
     "served": "straight",
     "garnish": "Lemon slice",
-    "color": "ly",
     "drinkware": "cocktail",
     "ingredients": [
       "3 cl vodka citron",
@@ -2593,7 +2494,6 @@
     "rum": "yes",
     "gin": "yes",
     "other": "Triple sec",
-    "color": "amber",
     "served": "rocks",
     "garnish": "lemon slice (optional)",
     "drinkware": "highball",
@@ -2624,7 +2524,6 @@
     "image": "Lynchburg Lemonade, Grindhouse Killer Burgers, Atlanta GA.jpg",
     "caption": "Lynchburg Lemonade<br>at Grindhouse Killer Burgers",
     "type": "cocktail",
-    "color": "amber",
     "flaming": "",
     "ALCOHOLTYPE": "whiskey",
     "served": "rocks",
@@ -2649,7 +2548,6 @@
     "caption": "",
     "sourcelink": "mai-tai",
     "type": "cocktail",
-    "color": "brown",
     "flaming": "",
     "rum": "yes",
     "served": "shaved or crushed ice",
@@ -2678,7 +2576,6 @@
     "rum": "yes",
     "served": "On the rocks",
     "drinkware": "highball",
-    "color": "orange",
     "garnish": "lemon slice",
     "ingredients": [
       "2 parts white rum (preferably Flor de Caña)",
@@ -2700,7 +2597,6 @@
     "type": "cocktail",
     "whiskey": "yes",
     "served": "straight",
-    "color": "dr",
     "garnish": "Maraschino cherry",
     "drinkware": "cocktail",
     "ingredients": [
@@ -2723,7 +2619,6 @@
       "Tequila"
     ],
     "served": "shaken",
-    "color": "orange",
     "garnish": "lime slice or twist",
     "drinkware": "cocktail",
     "ingredients": [
@@ -2740,7 +2635,6 @@
     "caption": "Michelada in a salt-rimmed glass",
     "type": "",
     "flaming": "",
-    "color": "red",
     "beer": "yes",
     "served": "In a chilled, salt-rimmed glass",
     "garnish": "Lime",
@@ -2769,7 +2663,6 @@
     "type": "cocktail",
     "flaming": "no",
     "gin": "yes",
-    "color": "clear",
     "vodka": "alternative to gin",
     "vermouth": "",
     "other": "",
@@ -2793,7 +2686,6 @@
     "caption": "",
     "type": "cocktail",
     "tequila": "yes",
-    "color": "ly",
     "served": "Rocks, straight up, frozen",
     "garnish": "Half salt rim (optional)",
     "drinkware": "margarita",
@@ -2815,7 +2707,6 @@
     "caption": "",
     "type": "cocktail",
     "flaming": "",
-    "color": "clear",
     "gin": "yes",
     "served": "",
     "garnish": "",
@@ -2842,7 +2733,6 @@
     "champagne": "yes",
     "served": "straight",
     "garnish": "Orange twist",
-    "color": "orange",
     "drinkware": "flute",
     "ingredients": [
       "7.5 cl champagne",
@@ -2862,7 +2752,6 @@
     "image": "Mojito98775.jpeg",
     "caption": "",
     "type": "cocktail",
-    "color": "clear",
     "rum": "yes",
     "served": "rocks",
     "garnish": "sprig of mint, slice of lime",
@@ -2890,7 +2779,6 @@
     "gin": "yes",
     "garnish": "",
     "drinkware": "cocktail",
-    "color": "or",
     "served": "straight",
     "ingredients": [
       "45 ml gin",
@@ -2912,7 +2800,6 @@
     "caption": "Mr. Bali Hai",
     "served": "Blended with crushed ice",
     "drinkware": "Special: Mr. Bali Hai mug",
-    "color": "ly",
     "garnish": "Two straws",
     "ingredients": [
       "1 1/2 oz of dark Jamaican rum",
@@ -2935,7 +2822,6 @@
     "caption": "Moscow mule as served at Rye, [[San Francisco]]",
     "type": "mixed",
     "flaming": "",
-    "color": "ly",
     "vodka": "yes",
     "served": "rocks",
     "garnish": "Lime slice",
@@ -2961,7 +2847,6 @@
     "caption": "",
     "type": "cocktail",
     "flaming": "",
-    "color":"cream",
     "vodka": "no",
     "served": "chilled and strained",
     "garnish": "orange peel",
@@ -2986,7 +2871,6 @@
     "image": "",
     "caption": "",
     "type": "mixed",
-    "color": "orange",
     "flaming": "no",
     "vodka": "yes",
     "liqueur": "yes",
@@ -3016,7 +2900,6 @@
     "image": "Whiskey Old Fashioned1.jpg",
     "type": "cocktail",
     "whiskey": "yes",
-    "color": "brown",
     "served": "rocks",
     "garnish": "Orange twist or zest, and cocktail cherry",
     "drinkware": "old",
@@ -3045,7 +2928,6 @@
     "campari": "yes",
     "served": "rocks",
     "garnish": "Orange slice",
-    "color": "red",
     "drinkware": "old",
     "ingredients": [
       "3 cl gin",
@@ -3071,7 +2953,6 @@
     "tequila": "yes",
     "served": "rocks",
     "garnish": "slice of lime",
-    "color": "ly",
     "drinkware": "highball",
     "ingredients": [
       "50  100% agave tequila",
@@ -3100,7 +2981,6 @@
     "irishc": "yes",
     "gmarnier": "yes",
     "served": "rocks",
-    "color": "cream",
     "garnish": "cherry",
     "drinkware": "old",
     "ingredients": [
@@ -3128,7 +3008,6 @@
     "served": "on the rocks",
     "garnish": "Nutmeg",
     "drinkware": "",
-    "color": "orange",
     "ingredients": [
       "2-4 part(s) Rum",
       "4 parts pineapple juice",
@@ -3155,7 +3034,6 @@
     "gin": "yes",
     "served": "straight",
     "garnish": "",
-    "color": "orange",
     "drinkware": "cocktail",
     "ingredients": [
       "3.5 cl (7 parts) gin",
@@ -3182,7 +3060,6 @@
     "served": "straight",
     "garnish": "Angostura bitters (1 dash)",
     "drinkware": "old",
-    "color": "ly",
     "ingredients": [
       "60  Pisco",
       "30  lemon juice",
@@ -3204,7 +3081,6 @@
     "type": "cocktail",
     "flaming": "",
     "rum": "yes",
-    "color": "cream",
     "served": "blended",
     "garnish": "Pineapple slice and/or maraschino cherry",
     "ingredients": [
@@ -3230,7 +3106,6 @@
     "flaming": "",
     "port": "yes",
     "served": "straight",
-    "color": "br",
     "garnish": "Grated nutmeg",
     "drinkware": "cocktail",
     "ingredients": [
@@ -3255,7 +3130,6 @@
     "type": "shooter",
     "flaming": "",
     "schnapps": "yes",
-    "color": "amber",
     "cacao": "yes",
     "served": "blended, on the rocks or neat",
     "garnish": "",
@@ -3284,7 +3158,6 @@
     "served": "chilled",
     "garnish": "rosemary sprig",
     "drinkware": "Cocktail glass",
-    "color": "ly",
     "ingredients": [
       "1 oz vodka",
       "1/2 oz herbal liqueur (traditionally elderflower cordial)",
@@ -3311,7 +3184,6 @@
     "served": "straight",
     "garnish": "",
     "drinkware": "cocktail",
-    "color": "orange",
     "ingredients": [
       "6 parts Gin",
       "3 parts Sweet Red Vermouth",
@@ -3338,7 +3210,6 @@
     "served": "straight-up or upside down",
     "garnish": "",
     "drinkware": "shot",
-    "color": "cream",
     "ingredients": [
       "one part Midori liqueur",
       "one part Kahlua",
@@ -3364,7 +3235,6 @@
       "Usually fruit juices and other drink mixers",
       "optionally with alcohol"
     ],
-    "color": "red",
     "prep": "Varied",
     "notes": "",
     "footnotes": "}}",
@@ -3382,7 +3252,6 @@
     "schnapps": "yes",
     "served": "rocks",
     "drinkware": "rocks2",
-    "color": "red",
     "ingredients": [
       "5 cl (one part) Jägermeister",
       "5 cl (one part) peach schnapps",
@@ -3407,7 +3276,6 @@
     "served": "rocks",
     "garnish": "",
     "drinkware": "rocks",
-    "color": "red",
     "ingredients": [
       "1 part (1 oz, 3 cl) vodka",
       "1 part (1 oz, 3 cl) Cherry Heering"
@@ -3430,7 +3298,6 @@
     "bourbon": "yes",
     "rye whiskey": "yes",
     "served": "rocks",
-    "color": "clear",
     "garnish": "lime half shell",
     "drinkware": "highball",
     "ingredients": [
@@ -3457,7 +3324,6 @@
     "flaming": "",
     "Rum": "yes",
     "served": "rocks",
-    "color": "clear",
     "garnish": "Grated Nutmeg, Cinnamon stick",
     "drinkware": "Pilsner Glass or Tall Glass",
     "ingredients": [
@@ -3484,7 +3350,6 @@
     "drambuie": "yes",
     "served": "rocks",
     "garnish": "Lemon zest",
-    "color": "amber",
     "drinkware": "old",
     "ingredients": [
       "45  Scotch Whisky",
@@ -3510,7 +3375,6 @@
     "vodka": "yes",
     "served": "neat",
     "garnish": "",
-    "color":"clear",
     "drinkware": "",
     "prep": "Premixed cocktail",
     "notes": "",
@@ -3526,7 +3390,6 @@
     "type": "beer",
     "flaming": "",
     "beer": "yes",
-    "color": "amber",
     "sake": "yes",
     "served": "neat",
     "garnish": "",
@@ -3555,7 +3418,6 @@
     "cognac": "yes",
     "served": "straight",
     "garnish": "Lemon peel",
-    "color": "or",
     "drinkware": "old",
     "ingredients": [
       "5 cl cognac",
@@ -3577,7 +3439,6 @@
     "flaming": "",
     "gin": "yes",
     "served": "Rocks",
-    "color": "cream",
     "garnish": "Salted glass",
     "drinkware": "highball",
     "ingredients": [
@@ -3604,7 +3465,6 @@
     "served": "rocks",
     "garnish": "orange slice",
     "drinkware": "highball",
-    "color": "orange",
     "ingredients": [
       "5 cl (1 part) vodka",
       "10 cl (2 parts) orange juice"
@@ -3629,7 +3489,6 @@
     "served": "rocks",
     "garnish": "lime slice",
     "drinkware": "highball",
-    "color": "red",
     "ingredients": [
       "4 cl Vodka",
       "12 cl Cranberry juice",
@@ -3652,7 +3511,6 @@
     "caption": "",
     "type": "cocktail",
     "flaming": "",
-    "color": "orange",
     "cognac": "yes",
     "served": "straight",
     "garnish": "",
@@ -3681,7 +3539,6 @@
     "served": "straight",
     "garnish": "Maraschino cherry, lemon slice",
     "drinkware": "highball",
-    "color": "red",
     "ingredients": [
       "2.5 cl gin",
       "4.5 cl cherry liqueur (cherry brandy)",
@@ -3701,7 +3558,6 @@
     "flaming": "",
     "served": "Without ice (no rocks)",
     "drinkware": "pint",
-    "color": "amber",
     "ingredients": [
       "One part lager/one part cider"
     ],
@@ -3721,7 +3577,6 @@
     "brandy": "yes",
     "gin": "yes",
     "pisco": "yes",
-    "color": "by",
     "rum": "yes",
     "served": "",
     "garnish": "",
@@ -3742,7 +3597,6 @@
     "name": "Skittle Bomb - Rétreau",
     "type": "Cocktail",
     "drinkware": "pubshot",
-    "color": "br"
     "ingredients": [
       "1 shot Cointreau",
       "1⁄2 can Red Bull"
@@ -3756,7 +3610,6 @@
     "type": "layered",
     "menthe": "yes",
     "other": "Amarula",
-    "color": "green",
     "served": "neat",
     "drinkware": "shot",
     "ingredients": [
@@ -3780,7 +3633,6 @@
     "type": "cocktail",
     "flaming": "",
     "cognac": "yes",
-    "color" "green",
     "served": "straight",
     "garnish": "",
     "drinkware": "cocktail",
@@ -3805,7 +3657,6 @@
     "sake": "yes",
     "served": "Hot",
     "garnish": "",
-    "color": "yellow",
     "drinkware": "",
     "ingredients": [
       "One raw egg (or egg yolk only)",
@@ -3826,7 +3677,6 @@
     "image": "Suffering Bastard Cocktail.jpg",
     "caption": "",
     "drinkware": "Collins",
-    "color": "brown",
     "ingredients": [
       "30 ml gin",
       "30 ml brandy",
@@ -3849,7 +3699,6 @@
     "served": "straight",
     "garnish": "",
     "drinkware": "rocks",
-    "color": "ly",
     "ingredients": [
       "One part tequila",
       "One part 7 Up, ginger ale, Sprite, or Mountain Dew"
@@ -3870,7 +3719,6 @@
     "flaming": "",
     "tequila": "yes",
     "served": "rocks",
-    "color": "orangered",
     "garnish": "orange slice and cherry",
     "drinkware": "collins",
     "ingredients": [
@@ -3896,7 +3744,6 @@
     "served": "rocks",
     "garnish": "Lime wedge and maraschino cherry",
     "drinkware": "collins",
-    "color": "clear",
     "ingredients": [
       "1 1/2 ounces tequila",
       "1 ounce lemon juice",
@@ -3919,7 +3766,6 @@
     "garnish": "Lime slice",
     "type": "mixed",
     "drinkware": "cocktail",
-    "color": "clear",
     "ingredients": [
       "6.0 cl Tequila",
       "3.0 cl Freshly squeezed lime juice",
@@ -3943,7 +3789,6 @@
     "flaming": "no",
     "gin": "yes",
     "served": "straight",
-    "color": "clear",
     "garnish": "cherry, lemon zest",
     "drinkware": "cocktail",
     "ingredients": [
@@ -3970,7 +3815,6 @@
     "flaming": "no",
     "canadian": "yes",
     "served": "straight",
-    "color":"brown",
     "garnish": "orange slice",
     "drinkware": "cocktail",
     "ingredients": [
@@ -3992,7 +3836,6 @@
     "flaming": "",
     "vodka": "",
     "served": "",
-    "color": "amber",
     "garnish": "Lemon twist",
     "drinkware": "Coupe or cocktail glass",
     "ingredients": [
@@ -4017,7 +3860,6 @@
     "tequila": "yes",
     "other": "",
     "served": "rocks",
-    "color": "orange",
     "garnish": "Salt on the rim. Chili pepper (optional)",
     "drinkware": "old",
     "ingredients": [
@@ -4052,7 +3894,6 @@
     "served": "straight",
     "garnish": "lemon zest",
     "drinkware": "cocktail",
-    "color": "clear",
     "ingredients": [
       "45  gin",
       "15  vodka",
@@ -4078,7 +3919,6 @@
     "served": "rocks",
     "garnish": "orange slice and cherry",
     "drinkware": "collins",
-    "color": "orangered",
     "ingredients": [
       "4.5 cl (3 parts) tequila",
       "9 cl (6 parts) orange juice",
@@ -4101,7 +3941,6 @@
     "flaming": "",
     "vodka": "yes",
     "served": "rocks",
-    "color": "clear",
     "garnish": "citrus fruit, usually lime or lemon",
     "drinkware": "highball",
     "ingredients": [
@@ -4131,7 +3970,6 @@
     "served": "straight",
     "garnish": "Orange zest and maraschino cherry",
     "drinkware": "cocktail",
-    "color": "pink",
     "ingredients": [
       "30  rye whiskey",
       "30  cognac",
@@ -4156,7 +3994,6 @@
     "image": "White Lady - Beefeater gin, Cointreau, fresh lemon juice (12403540403).jpg",
     "caption": "",
     "type": "cocktail",
-    "color": "cream",
     "flaming": "",
     "gin": "yes",
     "served": "straight",
@@ -4180,7 +4017,6 @@
     "type": "cocktail",
     "vodka": "yes",
     "beer": "yes",
-    "color": "amber",
     "ingredients": [
       "10 parts beer",
       "1 part vodka (Ratio varies according to taste.)"
@@ -4202,7 +4038,6 @@
     "vodka": "yes",
     "coffee": "yes",
     "served": "rocks",
-    "color": "creamblack",
     "garnish": "",
     "drinkware": "old",
     "ingredients": [
@@ -4226,7 +4061,6 @@
     "served": "On the rocks or straight up",
     "type": "cocktail",
     "flaming": "",
-    "color": "brown",
     "whiskey": "yes",
     "garnish": "Maraschino cherry and half orange slice",
     "drinkware": "old",
@@ -4254,7 +4088,6 @@
     "type": "cocktail",
     "flaming": "",
     "rum": "yes",
-    "color": "yellow",
     "served": "straight",
     "garnish": "",
     "drinkware": "cocktail",
@@ -4280,7 +4113,6 @@
     "caption": "Preparing Zurracapote",
     "type": "wine",
     "flaming": "",
-    "color": "red",
     "ALCOHOLTYPE": "wine",
     "served": "",
     "garnish": "",
