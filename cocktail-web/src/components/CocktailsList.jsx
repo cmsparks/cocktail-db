@@ -31,8 +31,10 @@ function IngredientsList(props) {
       <div className="ingredients">
         {props.ingredients.map((item, idx) =>
           <div className="ingredient" key={idx}>
-            <div className="outer-bullet">
-              <div className="inner-bullet"/>
+            <div className="bullet-container">
+              <div className="outer-bullet">
+                <div className="inner-bullet"/>
+              </div>
             </div>
             <div className="label">{item}</div>
           </div>
