@@ -48,7 +48,7 @@
   display: flex;
   flex-direction: row;
   gap: 100px;
-  padding: 100px;
+  padding: 70px;
   align-items: flex-end;
   box-sizing: border-box;
   height: calc(100vh - 100px);
@@ -83,11 +83,12 @@
   flex-direction: column;
   font-family: 'Avenir Next', 'Avenir';
   width: 250px;
-  height: 25vh;
-  padding: 5px 20px 20px;
+  height: 40vh;
+  padding: 0 20px;
   margin: 10px;
   overflow-y: auto;
-  border: black dashed 1px;
+  margin-top: -20px;
+  /*border: black dashed 1px;*/
 }
 
 .cock-box-info::-webkit-scrollbar {
@@ -108,10 +109,6 @@
   margin-top: 0.5em;
   padding-left: 0.6em;
   text-indent: -0.6em;
-}
-
-.cocktail-name {
-  text-align: center;
 }
 
 .ingredients {
@@ -169,6 +166,104 @@
   font-weight: 600;
 }
 
+.shot-style {
+  position:relative;
+  z-index: -1;
+  border: 1px solid red;
+}
+
+.shot-style:before {
+  content: " ";
+  position: absolute;
+  z-index: -1;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border: 3px dashed #bbbbbb;
+}
+
+.lowball-style {
+  z-index: -1;
+
+  position:relative;
+  border: 1px dashed blue;
+}
+
+.lowball-style:before {
+  content: " ";
+  position: absolute;
+  z-index: -1;
+  top: 3px;
+  left: 3px;
+  right: 3px;
+  bottom: 3px;
+  border: 2px dashed #bbbbbb;
+}
+
+.lowball-style:after {
+  content: " ";
+  position: absolute;
+  z-index: -1;
+  top: 8px;
+  left: 8px;
+  right: 8px;
+  bottom: 8px;
+  border: 1px dashed #bbbbbb;
+}
+.collins-style {
+
+  z-index: -1;
+
+  position:relative;
+  border: 1px solid #bbbbbb;
+}
+
+.collins-style:before {
+  content: " ";
+  position: absolute;
+  z-index: -1;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border: 3px solid #bbbbbb;
+}
+
+.martini-style {
+
+  z-index: -1;
+
+  position:relative;
+
+  border: 1px solid #bbbbbb;
+}
+
+.martini-style:before {
+  content: " ";
+  position: absolute;
+  z-index: -1;
+  background-color: none;
+  top: 4px;
+  left: 4px;
+  right: 4px;
+  bottom: 4px;
+  border: 1px solid #bbbbbb;
+}
+
+.martini-style:after {
+  content: " ";
+  position: absolute;
+  background-color: none;
+  z-index: -1;
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+  border: 1px solid #bbbbbb;
+}
+
+
 .shot-display {
   position: relative;
   bottom: -60px;
@@ -181,7 +276,7 @@
 
 .marg-display {
   position: relative;
-  bottom: -100px;
+  bottom: -80px;
 }
 
 
@@ -197,7 +292,7 @@
 
 .marg-display > svg {
   margin: 0 auto;
-  margin-left: 15%;
+  margin-left: 20%;
   width: 70%;
 }
 
@@ -230,3 +325,33 @@
   margin-left: 35%;
   width: 30%;
 }
+
+.lowball-style > div > .cocktail-name {
+  margin-top: 10px;
+  font-family: "Garamond";
+  font-size: 24pt;
+  text-align:center;
+}
+
+.shot-style > div > .cocktail-name {
+  font-family: "Futura";
+  margin-top: 10px;
+  text-align:center;
+}
+
+.martini-style > div > .cocktail-name {
+  font-family: "Sweet Sans Pro";
+  margin-top: 10px;
+  font-size: 20pt;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-align:center;
+}
+
+.collins-style > div > .cocktail-name {
+  font-family: "SF Pro Rounded";
+  margin-top: 10px;
+  font-size: 20pt;
+  text-align:center;
+}
+

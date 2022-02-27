@@ -4,10 +4,32 @@ function CocktailsList(props) {
   return <div className="list-container">{props.data.map((e, idx) => <Cocktail key={idx} cocktail={e}/>)}</div>;
 }
 
+function categorize(cocktail) {
+  if (!("drinkware" in cocktail)) {
+
+    return "lowball-style"
+  }
+  let g = cocktail.drinkware.toLowerCase();
+    if (["pilsner glass","pint","pint glass","highball","collins"].indexOf(g) > 0) {
+    return "collins-style"
+  }
+  else if (g.includes("shot")) {
+      return "shot-style"
+  }
+    else if (["flute", "cocktail", "coupe or cocktail glass", "coupe"].indexOf(g) > 0) {
+      return "martini-style"
+  }
+    else if (["hurricane glass", "margarita"].indexOf(g) > 0) {
+      return "marg-style"
+  }
+  return "lowball-style"
+}
+
 function Cocktail(props) {
-  return <div className="cocktail">
+  let drink_Category = categorize(props.cocktail);
+  return <div className={"cocktail"}>
     <CocktailDisplay className="cock-display" cocktail={props.cocktail}/>
-    <div className='cock-box'>
+    <div className={'cock-box ' + drink_Category}>
       <div className='cock-display-stand'></div>
       <div className="cock-box-info">
         <h2 className="cocktail-name">{props.cocktail.name}</h2>
