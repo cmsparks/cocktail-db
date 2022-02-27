@@ -26,6 +26,8 @@ for cocktail in cocktails:
     if prop in cocktail:
       cocktail[prop] = cocktail[prop].replace("\n", "")
       cocktail[prop] = cocktail[prop].replace("}}", "")
+      cocktail[prop] = cocktail[prop].replace("(cocktail)", "")
+      cocktail[prop] = cocktail[prop].replace(".info", "")
       cocktail[prop] = re.sub(r'\[\[[^\[\]\|]*?\|?([^\[\]\|]+)\]\]', r'\1', cocktail[prop])
       cocktail[prop] = cocktail[prop].replace("<ref name", "")
       cocktail[prop] = cocktail[prop].strip()
