@@ -79,8 +79,8 @@
 
 .cocktail-item {
   margin-top: 0.5em;
-  display: flex;
-  gap: 5px;
+  padding-left: 2em;
+  text-indent: -2em;
 }
 
 .cocktail-name {
@@ -140,7 +140,6 @@
 
 .item-key {
   font-weight: 600;
-  white-space: nowrap;
 }
 
 .marg-display {

@@ -11,7 +11,7 @@ function Cocktail(props) {
       <div className='cock-display-stand'></div>
       <div className="cock-box-info">
         <h2 className="cocktail-name">{props.cocktail.name}</h2>
-        {props.cocktail.primary_alcohol.length > 0 ? <Item name="Primary Alcohol" value={props.cocktail.primary_alcohol.join("; ")}/> : null}
+        {props.cocktail.primary_alcohol.length > 0 ? <Item name="Primary Alcohol" value={props.cocktail.primary_alcohol.join(", ")}/> : null}
         {props.cocktail.served ? <Item name="Served" value={props.cocktail.served}/>: null} 
         {props.cocktail.garnish ? <Item name="Garnish" value={props.cocktail.garnish}/> : null}
         {props.cocktail.drinkware ? <Item name="Glassware" value={props.cocktail.drinkware}/> : null}
@@ -25,10 +25,7 @@ function Cocktail(props) {
 function Item(props) {
   let {name, value} = props;
   return (
-    <div className="cocktail-item">
-      <div className="item-key">{name}</div>
-      <div>{value}</div>
-    </div>
+    <div className="cocktail-item"><span className="item-key">{name}</span> {value}</div>
   );
 }
 
