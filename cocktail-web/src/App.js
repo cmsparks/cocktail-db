@@ -9,16 +9,16 @@ import colors from './components/cocktail-colors.json'
 function App() {
   let [search, setSearch] = useState("");
   let [grad, setGrad] = useState(true);
-  
+  let [bgColor, setBGColor] = useState("#FFFFFF");
 
   return (
     <div>
       <header className="App-header">
         <SearchBar setSearch={setSearch}/>
       </header>
-      <div style={{backgroundColor: "#FFFFFF"}}>
+      <div className="bg" style={{backgroundColor: bgColor}}>
       </div>
-      <CocktailsList setScrollPosition={scrollpos} data={cocktails_data.filter(e => JSON.stringify(e).toLowerCase().includes(search))}>
+      <CocktailsList setBGColor={setBGColor} data={cocktails_data.filter(e => JSON.stringify(e).toLowerCase().includes(search))}>
       </CocktailsList>
     </div>
   );

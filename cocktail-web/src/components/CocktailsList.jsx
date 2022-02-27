@@ -2,7 +2,17 @@ import CocktailDisplay from './CocktailDisplay/CocktailDisplay'
 import colors from './cocktail-colors.json'
 import { useState, useEffect, useRef } from 'react';
 function CocktailsList(props) {
-  return <div className="list-container">{props.data.map((e, idx) => <Cocktail key={idx} cocktail={e}/>)}</div>;
+  let onScr = e => {
+    let prop = (e.target.scrollLeft ) / (e.target.scrollWidth - 1500);
+    let drinkN = Math.round(prop * props.data.length);
+    let ccolor = props.data[drinkN].color;
+    if (!("color" in props.data[drinkN])){
+      ccolor = "clear"
+    }
+    props.setBGColor(colors[ccolor].bg_color);
+  };
+
+  return <div className="list-container" onScroll={onScr}>{props.data.map((e, idx) => <Cocktail key={idx} cocktail={e}/>)}</div>;
 }
 
 function categorize(cocktail) {

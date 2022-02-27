@@ -1,4 +1,4 @@
-.bg-aviation {
+.bg {
   z-index:-5;
   top: 0;
   left: 0;
@@ -6,8 +6,8 @@
   width:100vw;
   height:100vh;
   /*background: linear-gradient(180deg, #FFD0E3 0%, #B9A2D0 100%);*/
-  background-color: #FFD0E3;
-  transition: background-color .2s;
+  opacity: .3;
+  transition: background-color .8s;
 }
 .bg-of {
   z-index:-5;
