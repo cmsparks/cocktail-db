@@ -36,6 +36,10 @@
   margin-left: calc(50% - 156px);
 }
 
+.cocktail:last-child {
+  margin-right: calc(50% - 156px);
+}
+
 .cocktail {
   position: relative;
 }
