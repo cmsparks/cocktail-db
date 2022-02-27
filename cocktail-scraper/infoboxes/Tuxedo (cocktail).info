@@ -1,0 +1,23 @@
+{{ infobox cocktail
+| iba         = yes
+| source      = iba
+| sourcelink  = tuxedo 
+| name        = Tuxedo
+| image       = 
+| caption     = 
+| type        = cocktail
+| flaming     = no
+| gin         = yes
+| served      = straight
+| garnish     = [[cherry]], [[lemon zest]]
+| drinkware   = cocktail
+| ingredients = * 3 cl [[gin]] (Old Tom)
+* 3 cl dry [[Vermouth]]
+* 1/2 barspoon [[Maraschino]]
+* 1/4 barspoon [[Absinthe]]
+* 3 dashes [[Bitters|orange bitters]]
+| prep        = Stir all ingredients with ice and strain into a cocktail glass.  Garnish with a cherry and a twist of lemon zest.
+| timing      = All Day
+| notes       = 
+| footnotes   = 
+}}
