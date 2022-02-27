@@ -59,6 +59,10 @@
   margin-left: calc(50% - 156px);
 }
 
+.cocktail:last-child {
+  margin-right: calc(50% - 156px);
+}
+
 .cocktail {
   position: relative;
 }
@@ -102,8 +106,8 @@
 
 .cocktail-item {
   margin-top: 0.5em;
-  padding-left: 2em;
-  text-indent: -2em;
+  padding-left: 0.6em;
+  text-indent: -0.6em;
 }
 
 .cocktail-name {
