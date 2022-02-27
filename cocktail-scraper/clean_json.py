@@ -97,7 +97,7 @@ for cocktail in cocktails:
   }
   cocktail['primary_alcohols'] = []
   for key, val in primary_alcohols.items():
-    if key in cocktail:
+    if key in cocktail and cocktail[key] == 'yes':
       cocktail['primary_alcohols'].append(val)
   if 'other' in cocktail:
       cocktail['primary_alcohols'].append(cocktail['other'])
