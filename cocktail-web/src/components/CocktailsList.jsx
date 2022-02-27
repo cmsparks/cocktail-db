@@ -16,7 +16,7 @@ function Cocktail(props) {
         {props.cocktail.garnish ? <Item name="Garnish" value={props.cocktail.garnish}/> : null}
         {props.cocktail.drinkware ? <Item name="Glassware" value={props.cocktail.drinkware}/> : null}
         <IngredientsList ingredients={props.cocktail.ingredients}/>
-        <Instructions instructions={props.cocktail.instructions}/>
+        {props.cocktail.prep ? <Item name="Instructions" value={props.cocktail.prep}/> : null}
       </div>
     </div>
   </div>;
@@ -24,9 +24,15 @@ function Cocktail(props) {
 
 function Item(props) {
   let {name, value} = props;
-  return (
-    <div className="cocktail-item"><span className="item-key">{name}</span> {value}</div>
-  );
+  if (name.length + value.length >= 30) {
+    return (
+      <div className="cocktail-item"><div className="item-key">{name}</div> {value}</div>
+    );
+  } else {
+    return (
+      <div className="cocktail-item"><span className="item-key">{name}</span> {value}</div>
+    );
+  }
 }
 
 function IngredientsList(props) {
@@ -47,10 +53,6 @@ function IngredientsList(props) {
       </div>
     </> : <></>;
   return ingredients;
-}
-
-function Instructions(props) {
-  return <div className="instructions">{props.prep}</div>
 }
 
 export default CocktailsList;
