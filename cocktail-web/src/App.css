@@ -4,7 +4,21 @@
 }
 
 .App-header {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-bar {
+  width: 50vw;
   height: 50px;
+  text-align: center;
+  font-family: 'Avenir Next', 'Avenir';
+  font-size: 12pt;
+  border: none;
+  box-shadow: 0px 2px 5px rgba(121, 121, 121, 0.1), 0px 5px 10px #E2DBE8;
+  border-radius: 50px;
 }
 
 .list-container {
@@ -14,7 +28,7 @@
   padding: 100px;
   align-items: flex-end;
   box-sizing: border-box;
-  height: calc(100vh - 50px);
+  height: calc(100vh - 100px);
   overflow-x: auto;
 }
 
