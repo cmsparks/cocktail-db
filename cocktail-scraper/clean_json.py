@@ -9,6 +9,8 @@ for cocktail in cocktails:
       cocktail['ingredients'] = cocktail['ingredients'].split('\n')
     elif '<br>' in cocktail['ingredients']:
       cocktail['ingredients'] = cocktail['ingredients'].split('<br>')
+    elif '<br/>' in cocktail['ingredients']:
+      cocktail['ingredients'] = cocktail['ingredients'].split('<br/>')
     elif '&nbsp;ml' in cocktail['ingredients']:
       cocktail['ingredients'] = cocktail['ingredients'].split('&nbsp;ml')
     elif ', ' in cocktail['ingredients']:
@@ -18,6 +20,10 @@ for cocktail in cocktails:
     for i in range(len(cocktail['ingredients'])):
       cocktail['ingredients'][i] = cocktail['ingredients'][i].replace("*", "")
       cocktail['ingredients'][i] = re.sub(r'\[\[[^\[\]\|]*?\|?([^\[\]\|]+)\]\]', r'\1', cocktail['ingredients'][i])
+      cocktail['ingredients'][i] = cocktail['ingredients'][i].replace("&nbsp;ml", " ")
+      cocktail['ingredients'][i] = cocktail['ingredients'][i].replace("&nbsp;", " ")
+      cocktail['ingredients'][i] = cocktail['ingredients'][i].replace("<small>", "")
+      cocktail['ingredients'][i] = cocktail['ingredients'][i].replace("</small>", "")
       cocktail['ingredients'][i] = cocktail['ingredients'][i].strip()
     for bad_ingred in ["}}", ""]:
       if bad_ingred in cocktail['ingredients']:
