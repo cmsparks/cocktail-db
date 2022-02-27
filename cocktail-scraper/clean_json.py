@@ -9,6 +9,10 @@ for cocktail in cocktails:
       cocktail['ingredients'] = cocktail['ingredients'].split('\n')
     elif '<br>' in cocktail['ingredients']:
       cocktail['ingredients'] = cocktail['ingredients'].split('<br>')
+    elif '<br/>' in cocktail['ingredients']:
+      cocktail['ingredients'] = cocktail['ingredients'].split('<br/>')
+    elif '<br />' in cocktail['ingredients']:
+      cocktail['ingredients'] = cocktail['ingredients'].split('<br />')
     elif '&nbsp;ml' in cocktail['ingredients']:
       cocktail['ingredients'] = cocktail['ingredients'].split('&nbsp;ml')
     elif ', ' in cocktail['ingredients']:
@@ -18,6 +22,10 @@ for cocktail in cocktails:
     for i in range(len(cocktail['ingredients'])):
       cocktail['ingredients'][i] = cocktail['ingredients'][i].replace("*", "")
       cocktail['ingredients'][i] = re.sub(r'\[\[[^\[\]\|]*?\|?([^\[\]\|]+)\]\]', r'\1', cocktail['ingredients'][i])
+      cocktail['ingredients'][i] = cocktail['ingredients'][i].replace("&nbsp;ml", " ")
+      cocktail['ingredients'][i] = cocktail['ingredients'][i].replace("&nbsp;", " ")
+      cocktail['ingredients'][i] = cocktail['ingredients'][i].replace("<small>", "")
+      cocktail['ingredients'][i] = cocktail['ingredients'][i].replace("</small>", "")
       cocktail['ingredients'][i] = cocktail['ingredients'][i].strip()
     for bad_ingred in ["}}", ""]:
       if bad_ingred in cocktail['ingredients']:
@@ -26,6 +34,8 @@ for cocktail in cocktails:
     if prop in cocktail:
       cocktail[prop] = cocktail[prop].replace("\n", "")
       cocktail[prop] = cocktail[prop].replace("}}", "")
+      cocktail[prop] = cocktail[prop].replace("(cocktail)", "")
+      cocktail[prop] = cocktail[prop].replace(".info", "")
       cocktail[prop] = re.sub(r'\[\[[^\[\]\|]*?\|?([^\[\]\|]+)\]\]', r'\1', cocktail[prop])
       cocktail[prop] = cocktail[prop].replace("<ref name", "")
       cocktail[prop] = cocktail[prop].strip()
@@ -95,12 +105,12 @@ for cocktail in cocktails:
     'jäger': 'Jägermeister',
     'amaretto': 'Amaretto'
   }
-  cocktail['primary_alcohols'] = []
+  cocktail['primary_alcohol'] = []
   for key, val in primary_alcohols.items():
-    if key in cocktail:
-      cocktail['primary_alcohols'].append(val)
+    if key in cocktail and cocktail[key] == 'yes':
+      cocktail['primary_alcohol'].append(val)
   if 'other' in cocktail:
-      cocktail['primary_alcohols'].append(cocktail['other'])
+      cocktail['primary_alcohol'].append(cocktail['other'])
 f = open("cleaned_cocktails.json", "w")
 json.dump(cocktails, f)
 f.close()
