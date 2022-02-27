@@ -21,35 +21,92 @@
   transition: background-color .2s;
 }
 
+.app {
+  height: 100vh;
+  width: 100vw;
+}
+
+.App-header {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-bar {
+  width: 50vw;
+  height: 50px;
+  text-align: center;
+  font-family: 'Avenir Next', 'Avenir';
+  font-size: 12pt;
+  border: none;
+  box-shadow: 0px 2px 5px rgba(121, 121, 121, 0.1), 0px 5px 10px #E2DBE8;
+  border-radius: 50px;
+}
 
 .list-container {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
   gap: 100px;
-  margin: 100px;
+  padding: 100px;
+  align-items: flex-end;
+  box-sizing: border-box;
+  height: calc(100vh - 100px);
+  overflow-x: auto;
+}
+
+.cocktail:first-child {
+  margin-left: calc(50% - 156px);
 }
 
 .cocktail {
+  position: relative;
+}
+
+.cock-box {
+  box-shadow: 0px 4px 10px rgba(121, 121, 121, 0.1), 0px 10px 20px #E2DBE8;
+  background: #FFFFFF;
+  background-color: white;
+  padding-bottom: 1px;
+}
+
+.cock-display-stand {
+  height: 100px;
+}
+
+.cock-box-info {
   display: flex;
   flex-direction: column;
-  background-color: white;
   font-family: 'Avenir Next', 'Avenir';
   width: 250px;
-  padding: 30px;
-  background: #FFFFFF;
-  box-shadow: 0px 4px 10px rgba(121, 121, 121, 0.1), 0px 10px 20px #E2DBE8;
-  margin-top: 330px;
+  height: 25vh;
+  padding: 5px 20px 20px;
+  margin: 10px;
+  overflow-y: auto;
+  border: black dashed 1px;
+}
+
+.cock-box-info::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+.cock-box-info::-webkit-scrollbar:vertical {
+  width: 10px;
+}
+
+.cock-box-info::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  border: 2px solid white; /* should match background, can't be transparent */
+  background-color: rgba(0, 0, 0, .5);
 }
 
 .cocktail-item {
   margin-top: 0.5em;
-  display: flex;
-  gap: 5px;
+  padding-left: 2em;
+  text-indent: -2em;
 }
 
-.cocktail > h1 {
+.cocktail-name {
   text-align: center;
 }
 
@@ -106,27 +163,32 @@
 
 .item-key {
   font-weight: 600;
-  white-space: nowrap;
+}
+
+.shot-display {
+  position: relative;
+  bottom: -60px;
+}
+
+.collins-display {
+  position: relative;
+  bottom: -75px;
 }
 
 .marg-display {
   position: relative;
-  bottom: 330px;
-  margin-bottom:-300px;
+  bottom: -100px;
 }
 
 
 .lowball-display {
   position: relative;
-  bottom: 240px;
-  margin-bottom:-220px;
+  bottom: -80px;
 }
-
 
 .martini-display {
   position: relative;
-  bottom: 330px;
-  margin-bottom:-300px;
+  bottom: -100px;
 }
 
 .marg-display > svg {
@@ -137,11 +199,30 @@
 
 .lowball-display > svg {
   margin: 0 auto;
-  width: 100%;
+  margin-left: 5%;
+  width: 90%;
 }
 
 .martini-display > svg {
   margin: 0 auto;
   margin-left: 5%;
   width: 90%;
+}
+
+.martini-display > svg {
+  margin: 0 auto;
+  margin-left: 5%;
+  width: 90%;
+}
+
+.collins-display > svg {
+  margin: 0 auto;
+  margin-left: 10%;
+  width: 80%;
+}
+
+.shot-display > svg {
+  margin: 0 auto;
+  margin-left: 35%;
+  width: 30%;
 }
